@@ -1,0 +1,17 @@
+{
+  "axiom_audit": "Passed unchanged audit_output with the four declared Q0001 names and original allowlist",
+  "checked_on": "2026-11-09",
+  "command": [
+    "/tmp/atlas-lean-4.24/bin/lean",
+    "research/agent-attempts/0002/IntegerCriterion.lean"
+  ],
+  "exit_code": 0,
+  "limitations": [
+    "Same installed Lean distribution; no separate external kernel",
+    "No hosted CI execution of this new theorem module asserted"
+  ],
+  "output": "'Atlas.IntegerCriterion.necessary' depends on axioms: [propext, Quot.sound]\n'Atlas.IntegerCriterion.witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Atlas.IntegerCriterion.solvability_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Atlas.IntegerCriterion.unique_solution' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "python_version": "3.12.14",
+  "reviewer": "Root integration agent; separate process from producer and independent review agent",
+  "source_sha256": "8101d90754600546e65b344f2eb41fbc88b66f956e68addc318319f42c2629e9"
+}

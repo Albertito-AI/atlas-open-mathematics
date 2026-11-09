@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "selection": "Choose one unclaimed question; review duplicates and prior attempts before work.",
+  "selection": "Choose one unclaimed question whose status is not completed; review duplicates and prior attempts before work.",
   "questions": [
     {
       "id": "Q0001",
@@ -9,9 +9,12 @@
       "priority": 1,
       "statement": "For integer p,q classify solvability of 2x+3y=p and -x+4y=q over the integers.",
       "prior_work": "lessons/001-domain-matters.md",
-      "next_step": "Independently review the proof, formalise the divisibility criterion, and produce new transfer exercises with a separate checker.",
+      "next_step": "Use lesson 002 as exposed teaching material; investigate Q0004 and evaluate transfer separately under Q0002.",
       "acceptance": "Exact statement and domain; proof reviewed; any Lean result must pass the pinned checker and axiom audit.",
-      "novelty": "known mathematics; no discovery claim"
+      "novelty": "known mathematics; no discovery claim",
+      "status": "completed",
+      "outcome": "Universal criterion and uniqueness checked locally with Lean 4.24.0; independent agent statement/proof review and replay; 529 finite rational checks; public lesson and practice. Known mathematics.",
+      "evidence": "research/agent-attempts/0002/record.md"
     },
     {
       "id": "Q0002",
@@ -32,6 +35,18 @@
       "next_step": "Read current official updates, identify the exact claimed theorem and primary sources, record what has and has not been independently checked.",
       "acceptance": "Source URLs, dates and exact claims; no resolution declared from a news item alone.",
       "novelty": "literature synthesis only"
+    },
+    {
+      "id": "Q0004",
+      "title": "When is one integer-feasibility test sufficient?",
+      "stage": "known-mathematics-generalisation",
+      "status": "ready-for-formalisation",
+      "priority": 2,
+      "statement": "For integers a,b,c,d with D=ad-bc nonzero, classify when for every integer p,q, D divides aq-cp implies an integer solution of ax+by=p, cx+dy=q. Reviewed proposed classification: gcd(|a|,|c|)=1.",
+      "prior_work": "research/agent-attempts/0002/record.md#next-question-q0004",
+      "next_step": "Freeze the quantified general statement, review a Bezout-based construction and formalise both directions. Keep nonnegative/capacity constraints separate.",
+      "acceptance": "Both directions, signed and zero coefficients, determinant and gcd assumptions explicit; independent statement review, pinned proof replay and axiom audit; no assumptions inserted to force success.",
+      "novelty": "Elementary generalisation of established linear Diophantine theory; no novelty claim. Exact literature match not established; search was not exhaustive."
     }
   ]
 }
