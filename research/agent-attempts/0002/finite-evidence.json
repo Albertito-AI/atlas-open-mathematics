@@ -1,0 +1,103 @@
+{
+  "command": "python research/agent-attempts/0002/check_examples.py",
+  "grid": {
+    "checked": 529,
+    "criterion_mismatches": 0,
+    "integer_solutions": 49,
+    "p_bounds_inclusive": [
+      -11,
+      11
+    ],
+    "q_bounds_inclusive": [
+      -11,
+      11
+    ]
+  },
+  "human_or_agent_transfer_measured": false,
+  "modulo_11": {
+    "criterion_mismatches": 0,
+    "image_size": 11,
+    "input_pairs_checked": 121
+  },
+  "novelty": "Known elementary mathematics",
+  "problem_id": "Q0001",
+  "public_practice": {
+    "candidate": {
+      "certificate": {
+        "determinant": "13"
+      },
+      "solution": [
+        "2",
+        "1"
+      ],
+      "status": "unique"
+    },
+    "case": {
+      "A": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        8,
+        7
+      ],
+      "id": "batching-public-practice",
+      "kind": "unique"
+    },
+    "integer_solution": true,
+    "rational_verification": {
+      "accepted": true,
+      "reason": "exact substitution and nonzero determinant prove a unique solution"
+    }
+  },
+  "rejected_generalisation": {
+    "candidate": {
+      "certificate": {
+        "determinant": "4"
+      },
+      "solution": [
+        "0",
+        "1/2"
+      ],
+      "status": "unique"
+    },
+    "case": {
+      "A": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "b": [
+        1,
+        2
+      ],
+      "id": "one-numerator-counterexample",
+      "kind": "unique"
+    },
+    "first_numerator_divisible": true,
+    "integer_solution": false,
+    "rational_verification": {
+      "accepted": true,
+      "reason": "exact substitution and nonzero determinant prove a unique solution"
+    },
+    "refutation": "2x+2y=1 has no integer solution; rational uniqueness gives (0,1/2).",
+    "second_numerator_divisible": false,
+    "x_numerator": 0,
+    "y_numerator": 2
+  },
+  "scope": "Finite supporting checks, not a universal proof or a held-out agent evaluation",
+  "script_sha256": "5d7e1ca6dce8fbcd904c57a49e87d5066ee2c89298f8ede923f7676c0ab7b9b1",
+  "source_base_commit": "0fcb42f3e52853a46116ce835338c3d9f84e8c1b",
+  "verifier_sha256": "2bcaea6a94d35426910e4b3dbca665a9bb8d541d3286fc39e9b1e2e309a70c60"
+}

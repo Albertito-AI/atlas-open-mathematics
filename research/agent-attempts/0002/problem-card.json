@@ -1,0 +1,42 @@
+{
+  "acceptance": [
+    "Independent statement and proof review",
+    "Actual pinned Lean replay with unchanged axiom policy",
+    "Preserve counterexamples and exact finite evidence",
+    "Public lesson and separate practice exercises"
+  ],
+  "assumptions": [
+    "p,q,x,y are integers; no nonnegativity assumption."
+  ],
+  "attempt_id": "live-agent-0002",
+  "frozen_target_location": "AFW control claim ATLAS-MATH-Q0001-20261109; recorded before proof production",
+  "interpretation": "Both equations must hold; integer witnesses may be negative or zero.",
+  "novelty_status": "known-result; no discovery claim",
+  "prior_work": "lessons/001-domain-matters.md",
+  "problem_id": "Q0001",
+  "publication_status": "working-record",
+  "resources": {
+    "actor": "OpenAI Codex with separate producer, independent review agent and root integrator; exact provider model identifier unavailable in the run record",
+    "capacity": "Existing interactive ChatGPT agents and local Python/Lean",
+    "elapsed_minutes": "unknown; not instrumented",
+    "execution_bounds": "120 seconds per Lean process; 529 rational checks and 121 residue pairs; one Q0001 work item",
+    "new_external_spend": 0,
+    "paid_api_calls": 0,
+    "tokens": "unknown; not exposed"
+  },
+  "revision": 1,
+  "source_base_commit": "0fcb42f3e52853a46116ce835338c3d9f84e8c1b",
+  "sources": [
+    {
+      "pinpoint": "pp. 1\u20132, inverse formula and Cramer\u2019s rule",
+      "read_status": "Relevant PDF pages inspected by reviewer and root",
+      "url": "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/f6e46da0d783d8f9c0a25c407c76166a_MIT18_06SCF11_Ses2.7sum.pdf"
+    },
+    {
+      "pinpoint": "pp. 49\u201353; Theorems 1\u20132 and full-rank case",
+      "read_status": "Relevant sections inspected by reviewer and root",
+      "url": "https://sites.hofstra.edu/raymond-greenwell/wp-content/uploads/sites/9/2019/07/Smith_Normal_Form.pdf"
+    }
+  ],
+  "statement": "For all integers p,q: (there exist integers x,y with 2x+3y=p and -x+4y=q) if and only if 11 divides p+2q."
+}

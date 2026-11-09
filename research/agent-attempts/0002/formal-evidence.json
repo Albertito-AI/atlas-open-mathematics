@@ -1,0 +1,55 @@
+{
+  "audit_script_sha256": "572827ef45ddad06ae446ef2742bea7cd4f05d3d09e736d61bf3b486287657a3",
+  "axiom_audit": "Existing scripts/check_formal.py audit_output function reused without modification with these four explicitly listed theorem names and the unchanged allowed_axioms list.",
+  "checked_on": "2026-11-09",
+  "compiler_command": [
+    "/tmp/atlas-lean-4.24/bin/lean",
+    "research/agent-attempts/0002/IntegerCriterion.lean"
+  ],
+  "compiler_exit_code": 0,
+  "imports": [
+    "Lean.Elab.Tactic.Omega"
+  ],
+  "lean_executable_sha256": "8fadc3ed92cc9decb94c96ee9c0876e91e03a3a5e69138f32114f02789e2766c",
+  "lean_version": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "limitations": [
+    "Actual local Lean execution only; no remote workflow run for this file is asserted.",
+    "The existing four-statement pilot and its checker were not extended or modified.",
+    "Formal correctness concerns the exact integer statements and recorded proof assumptions, not novelty, the Python implementation, arbitrary matrices or Millennium problems.",
+    "No separate external kernel checker was used."
+  ],
+  "novelty_status": "known-result; no novelty claim",
+  "output": "'Atlas.IntegerCriterion.necessary' depends on axioms: [propext, Quot.sound]\n'Atlas.IntegerCriterion.witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Atlas.IntegerCriterion.solvability_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Atlas.IntegerCriterion.unique_solution' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "problem_id": "Q0001",
+  "publication_status": "working-record; no journal acceptance or external peer review",
+  "reproduction_command": "lean research/agent-attempts/0002/IntegerCriterion.lean",
+  "reproduction_requirement": "Use the pinned Lean 4.24.0 official distribution identified in formal/toolchain.json, not an arbitrary executable named lean.",
+  "scope": "Four universal integer statements: necessary divisibility, explicit witness, exact solvability criterion and uniqueness for 2x+3y=p and -x+4y=q.",
+  "source_base_commit": "0fcb42f3e52853a46116ce835338c3d9f84e8c1b",
+  "source_path": "research/agent-attempts/0002/IntegerCriterion.lean",
+  "source_sha256": "8101d90754600546e65b344f2eb41fbc88b66f956e68addc318319f42c2629e9",
+  "status": "kernel-checked-known-mathematics",
+  "theorems": {
+    "Atlas.IntegerCriterion.necessary": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Atlas.IntegerCriterion.solvability_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Atlas.IntegerCriterion.unique_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Atlas.IntegerCriterion.witness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "toolchain_manifest_path": "formal/toolchain.json",
+  "toolchain_manifest_sha256": "f0ca9dc19cb96fb72937d3e300de3a9d4a5126e6c941dc901a9ecd11cffe4941"
+}
