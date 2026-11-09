@@ -1,0 +1,36 @@
+name: Formal algebra pilot
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: formal-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lean:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out proof source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Download and check official pinned Lean distribution
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 2 --connect-timeout 20 --max-time 240 \
+            -o "$RUNNER_TEMP/lean.tar.zst" \
+            https://github.com/leanprover/lean4/releases/download/v4.24.0/lean-4.24.0-linux.tar.zst
+          echo 'b14f5e5159219dd1a1956c3b806813319f5e94ccd5bdfd56f54520609a5bb5ec  '"$RUNNER_TEMP/lean.tar.zst" | sha256sum --check
+          mkdir "$RUNNER_TEMP/atlas-lean"
+          tar --zstd -xf "$RUNNER_TEMP/lean.tar.zst" --strip-components=1 -C "$RUNNER_TEMP/atlas-lean"
+      - name: Check all four statements and their proof assumptions
+        run: python3 scripts/check_formal.py --lean "$RUNNER_TEMP/atlas-lean/bin/lean"

@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/Albertito-AI/atlas-opsbook",
+  "commit": "94b84261d0d2ae23f783522a3c2e4cb697aecde3",
+  "licence": "MIT; original notice retained",
+  "scope": "Unmodified opsbook.py and LICENSE only; distribution demo assets are not vendored",
+  "sha256": {
+    "opsbook.py": "bb47ef45146181747e47bb7137154819145117f4a08593acaa8d3cde0fe3d717",
+    "LICENSE": "4e3cd3d5e312416551675b4899965efa6937dfa22521beeff2633cf46a912276"
+  }
+}

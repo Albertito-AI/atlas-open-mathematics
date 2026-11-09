@@ -1,0 +1,28 @@
+name: Report a mathematical or teaching correction
+description: Identify a claim, its problem and evidence for a correction.
+title: "[Correction] "
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Affected record, file or exact commit
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Claim and objection
+      description: Quote only the necessary text and explain the mathematical or educational issue.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Reproduction, counterexample or source
+    validations:
+      required: true
+  - type: textarea
+    id: remedy
+    attributes:
+      label: Suggested correction and affected dependencies
+      description: State any uncertainty. Preserve earlier evidence rather than deleting it.

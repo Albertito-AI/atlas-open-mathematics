@@ -1,0 +1,42 @@
+{
+  "candidate": {
+    "certificate": {
+      "determinant": "0"
+    },
+    "solution": [
+      "-5/7",
+      "-3/2"
+    ],
+    "status": "unique"
+  },
+  "case": {
+    "A": [
+      [
+        7,
+        3
+      ],
+      [
+        14,
+        6
+      ]
+    ],
+    "b": [
+      -5,
+      -9
+    ],
+    "id": "case-991a8844edb1b4380a649ddb8d10d6fcd8ff9f5a64b6381c26347f0fa0279dae",
+    "kind": "inconsistent"
+  },
+  "epistemic_status": "candidate_rejected",
+  "id": "attempt-06a9163e639e159301165621cc7da86a49c35d341728d4a7dcf9ec3ad03e2c57",
+  "live_model": false,
+  "method": "frozen_diagonal_baseline",
+  "novelty": "known_mathematics",
+  "phase": "public_transfer_practice",
+  "schema_version": 1,
+  "synthetic": true,
+  "verification": {
+    "accepted": false,
+    "reason": "exact substitution fails at least one original equation"
+  }
+}

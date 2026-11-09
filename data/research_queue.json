@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "selection": "Choose one unclaimed question; review duplicates and prior attempts before work.",
+  "questions": [
+    {
+      "id": "Q0001",
+      "title": "When do the parameterised equations have an integer solution?",
+      "stage": "known-mathematics-reproduction",
+      "priority": 1,
+      "statement": "For integer p,q classify solvability of 2x+3y=p and -x+4y=q over the integers.",
+      "prior_work": "lessons/001-domain-matters.md",
+      "next_step": "Independently review the proof, formalise the divisibility criterion, and produce new transfer exercises with a separate checker.",
+      "acceptance": "Exact statement and domain; proof reviewed; any Lean result must pass the pinned checker and axiom audit.",
+      "novelty": "known mathematics; no discovery claim"
+    },
+    {
+      "id": "Q0002",
+      "title": "Test whether the domain lesson transfers",
+      "stage": "evaluation-design",
+      "priority": 2,
+      "statement": "Does access to the recorded domain lesson improve an agent response on fresh linear-system tasks?",
+      "next_step": "Design matched runs, fresh reviewer-held tasks and a frozen rubric before collecting outputs. Use only authorised existing model capacity.",
+      "acceptance": "Preserve failures and model settings; report sample size and limits; do not infer model-weight changes.",
+      "novelty": "method evaluation proposed; no empirical outcome yet"
+    },
+    {
+      "id": "Q0003",
+      "title": "Audit the Navier-Stokes status and prerequisites",
+      "stage": "literature-map",
+      "priority": 3,
+      "statement": "Keep Clay status and the original mathematical claim distinct while mapping inspectable prerequisite lemmas.",
+      "next_step": "Read current official updates, identify the exact claimed theorem and primary sources, record what has and has not been independently checked.",
+      "acceptance": "Source URLs, dates and exact claims; no resolution declared from a news item alone.",
+      "novelty": "literature synthesis only"
+    }
+  ]
+}

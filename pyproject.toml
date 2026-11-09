@@ -1,0 +1,10 @@
+[project]
+name = "atlas-open-mathematics"
+version = "0.1.0"
+description = "Reproducible mathematical research and teaching pilot"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.atlas]
+additional-spend = 0
+live-model-provider = "none bundled"

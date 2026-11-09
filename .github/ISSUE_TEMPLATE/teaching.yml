@@ -1,0 +1,29 @@
+name: Improve a lesson or report transfer
+description: Improve an explanation or describe evidence of learning.
+title: "[Learning] "
+body:
+  - type: input
+    id: lesson
+    attributes:
+      label: Lesson and version
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Intended audience and difficulty
+      description: Explain prerequisite knowledge and the point that needs improvement.
+    validations:
+      required: true
+  - type: textarea
+    id: contribution
+    attributes:
+      label: Proposed improvement or transfer evidence
+      description: Distinguish a personal observation from a controlled evaluation. Exclude identifiable learner data.
+    validations:
+      required: true
+  - type: textarea
+    id: rights
+    attributes:
+      label: Sources, attribution and permissions
+      description: Required for translations, adaptations and reused material.

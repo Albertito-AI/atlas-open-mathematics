@@ -1,0 +1,60 @@
+# Formal supporting algebra
+
+This pilot checks four statements about a particular pair of integer equations:
+
+\[
+x+y=s,\qquad x-y=d.
+\]
+
+1. Every solution satisfies \(2x=s+d\) and \(2y=s-d\).
+2. Any two integer solutions with the same \(s,d\) coincide.
+3. For \(s=11,d=3\), the equations hold exactly when \(x=7,y=4\).
+4. There is no integer solution for \(s=10,d=3\).
+
+The last statement is specific to integers. Over the rationals, \(x=13/2,y=7/2\)
+does solve that system. This distinction is a useful lesson about preserving a
+problem's domain during formalisation.
+
+These are established elementary results. They provide a small example of
+formal proof checking alongside the Python experiments. They do not verify the
+Python solver, arbitrary rational matrices or any Millennium Prize Problem.
+
+## Reproduce
+
+Install the official Lean version in `lean-toolchain`, then run from the
+repository root:
+
+```sh
+python3 scripts/check_formal.py --lean /path/to/lean
+```
+
+The optional `--output runs/formal/evidence.json` saves an immutable evidence
+file. The script checks the compiler version, runs the proof file, rejects
+warnings and audits every theorem's transitive axioms against an explicit
+allowlist. It accepts no unfinished proof or extra axiom. The `omega` tactic
+constructs proof terms checked by Lean's kernel.
+
+The workflow [formal.yml](../.github/workflows/formal.yml) uses an exact official
+release archive and its SHA-256 digest, checked against GitHub's release
+metadata on 9 November 2026. It has read-only repository permissions, no model
+keys, no extra packages and a fifteen-minute timeout. The binary is downloaded
+afresh to the disposable runner. Dependency download availability can prevent a
+run; it does not change proof status.
+
+## Trust and review
+
+Read the Lean statements in [Atlas.lean](Atlas.lean) and compare them with the
+four claims above. Human review of their intended meaning remains necessary.
+The current checks use Lean's own kernel and assumption audit; an independent
+external checker is not part of this pilot. See the official
+[Lean proof-validation guidance](https://lean-lang.org/doc/reference/latest/ValidatingProofs/).
+
+`check_formal.py` is specific to this small, reviewed file. Its lexical checks
+are a review aid and do not make arbitrary generated Lean code safe. Broader
+automated proof submissions require a separate trusted challenge, sandboxed
+execution and stronger independent verification. Do not send secrets into a
+proof-building environment.
+
+A successful local or GitHub run is the evidence for acceptance of these
+statements under the recorded assumptions. The existence of this workflow or
+documentation alone is not evidence that it passed.

@@ -1,0 +1,15 @@
+{
+  "version": "4.24.0",
+  "release_url": "https://github.com/leanprover/lean4/releases/tag/v4.24.0",
+  "linux_archive": "https://github.com/leanprover/lean4/releases/download/v4.24.0/lean-4.24.0-linux.tar.zst",
+  "linux_sha256": "b14f5e5159219dd1a1956c3b806813319f5e94ccd5bdfd56f54520609a5bb5ec",
+  "source_checked_on": "2026-11-09",
+  "dependencies": "Lean bundled libraries only; no mathlib dependency",
+  "allowed_axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "theorems": [
+    "Atlas.two_equation_consequences",
+    "Atlas.two_equation_unique",
+    "Atlas.concrete_solution",
+    "Atlas.incompatible_parity"
+  ]
+}

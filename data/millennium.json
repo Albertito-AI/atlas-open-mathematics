@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "title": "Atlas Open Mathematics Millennium research register",
+  "as_of": "2026-11-09",
+  "scope": "Long-term research and prerequisite-learning directions. No Millennium solution or progress towards one is claimed by this repository.",
+  "source_policy": "Official status labels are dated observations from Clay Mathematics Institute pages. Summaries do not replace the linked official technical statements.",
+  "curriculum_policy": "Prerequisites and bounded activities are project proposals, not Clay requirements or predictions of success.",
+  "implemented_pilot": "Exact rational certificates for finite systems of two linear equations in two unknowns.",
+  "index_source": "https://www.claymath.org/millennium-problems/",
+  "prize_rules_source": "https://www.claymath.org/millennium-problems/rules/",
+  "historical_context": {
+    "title": "Poincaré conjecture",
+    "official_status_label": "Solved",
+    "official_source": "https://www.claymath.org/millennium/poincare-conjecture/",
+    "note": "Perelman’s established solution is a historical learning case outside the six-topic programme."
+  },
+  "problems": [
+    {
+      "id": "p-vs-np",
+      "title": "P versus NP",
+      "official_status_label": "Unsolved",
+      "status_checked_on": "2026-11-09",
+      "official_source": "https://www.claymath.org/millennium/p-vs-np/",
+      "statement_summary": "Decide whether P equals NP for the standard polynomial-time decision-problem classes.",
+      "programme_stage": "prerequisite_learning",
+      "project_solution_claimed": false,
+      "formal_proof_in_this_repository": false,
+      "prerequisites": [
+        "Logic and discrete mathematics",
+        "Algorithms and asymptotic complexity",
+        "Polynomial-time reductions",
+        "Computational complexity theory"
+      ],
+      "first_bounded_activity": "Build a satisfiability certificate checker and compare it with bounded exhaustive enumeration.",
+      "claim_boundary": "Finite search timings cannot establish P = NP or P != NP.",
+      "official_technical_statement": "https://www.claymath.org/wp-content/uploads/2022/06/pvsnp.pdf"
+    },
+    {
+      "id": "riemann",
+      "title": "Riemann hypothesis",
+      "official_status_label": "Unsolved",
+      "status_checked_on": "2026-11-09",
+      "official_source": "https://www.claymath.org/millennium/riemann-hypothesis/",
+      "statement_summary": "Every non-trivial zero of the Riemann zeta function has real part one half.",
+      "programme_stage": "prerequisite_learning",
+      "project_solution_claimed": false,
+      "formal_proof_in_this_repository": false,
+      "prerequisites": [
+        "Proof-based calculus",
+        "Complex analysis",
+        "Elementary number theory",
+        "Analytic continuation",
+        "Analytic number theory"
+      ],
+      "first_bounded_activity": "Reproduce elementary number-theory proofs and explain the zeta function domain and continuation.",
+      "claim_boundary": "Checking finitely many zeros does not prove the hypothesis for all non-trivial zeros.",
+      "official_technical_statement": "https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf"
+    },
+    {
+      "id": "navier-stokes",
+      "title": "Navier–Stokes existence and smoothness",
+      "official_status_label": "Active",
+      "status_checked_on": "2026-11-09",
+      "official_source": "https://www.claymath.org/millennium/navier-stokes-equation/",
+      "statement_summary": "Resolve one official existence or breakdown alternative for three-dimensional incompressible Navier–Stokes flow under its specified hypotheses.",
+      "programme_stage": "prerequisite_learning",
+      "project_solution_claimed": false,
+      "formal_proof_in_this_repository": false,
+      "prerequisites": [
+        "Multivariable calculus",
+        "Real analysis",
+        "Differential equations",
+        "Functional analysis",
+        "Sobolev spaces and partial differential equation estimates"
+      ],
+      "first_bounded_activity": "Check an energy identity under explicit boundary and regularity assumptions and audit the scope of the 2026 announcement.",
+      "claim_boundary": "A simulation or simplified equation does not establish an official existence or breakdown alternative.",
+      "status_note": "Clay acknowledged an apparent resolution on 11 September 2026 while retaining its prize evaluation process. The problem page remains Active. This project has not independently assessed the announced proof or verified a prize award.",
+      "status_notice": "https://www.claymath.org/news/navier-stokes-announcement/",
+      "official_technical_statement": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf"
+    },
+    {
+      "id": "hodge",
+      "title": "Hodge conjecture",
+      "official_status_label": "Unsolved",
+      "status_checked_on": "2026-11-09",
+      "official_source": "https://www.claymath.org/millennium/hodge-conjecture/",
+      "statement_summary": "Rational Hodge classes on a smooth complex projective variety are rational linear combinations of classes of algebraic cycles.",
+      "programme_stage": "prerequisite_learning",
+      "project_solution_claimed": false,
+      "formal_proof_in_this_repository": false,
+      "prerequisites": [
+        "Linear and abstract algebra",
+        "Topology",
+        "Differential geometry",
+        "Complex manifolds",
+        "Cohomology and algebraic geometry"
+      ],
+      "first_bounded_activity": "Explain cohomology and algebraic cycles through explicitly scoped elementary examples.",
+      "claim_boundary": "An example, or a statement with altered coefficients or hypotheses, does not establish the rational Hodge conjecture.",
+      "official_technical_statement": "https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf"
+    },
+    {
+      "id": "birch-swinnerton-dyer",
+      "title": "Birch and Swinnerton-Dyer conjecture",
+      "official_status_label": "Unsolved",
+      "status_checked_on": "2026-11-09",
+      "official_source": "https://www.claymath.org/millennium/birch-and-swinnerton-dyer-conjecture/",
+      "statement_summary": "The rational-point rank of an elliptic curve over the rationals equals the order of vanishing of its L-function at one; the refined conjecture predicts the leading coefficient.",
+      "programme_stage": "prerequisite_learning",
+      "project_solution_claimed": false,
+      "formal_proof_in_this_repository": false,
+      "prerequisites": [
+        "Number theory",
+        "Abstract algebra",
+        "Algebraic curves",
+        "Elliptic curves",
+        "L-functions and arithmetic geometry"
+      ],
+      "first_bounded_activity": "Count points on nonsingular elliptic curves over small finite fields and distinguish those counts from rational-point rank.",
+      "claim_boundary": "Finite-field counts and numerical L-values do not prove the general rank or leading-coefficient assertions.",
+      "official_technical_statement": "https://www.claymath.org/wp-content/uploads/2022/05/birchswin.pdf"
+    },
+    {
+      "id": "yang-mills",
+      "title": "Yang–Mills existence and mass gap",
+      "official_status_label": "Unsolved",
+      "status_checked_on": "2026-11-09",
+      "official_source": "https://www.claymath.org/millennium/yang-mills-the-maths-gap/",
+      "statement_summary": "For each compact simple gauge group, construct the required non-trivial quantum Yang–Mills theory on four-dimensional Euclidean space and prove a positive mass gap.",
+      "programme_stage": "prerequisite_learning",
+      "project_solution_claimed": false,
+      "formal_proof_in_this_repository": false,
+      "prerequisites": [
+        "Analysis and geometry",
+        "Lie groups",
+        "Classical field theory",
+        "Quantum mechanics",
+        "Rigorous quantum field theory"
+      ],
+      "first_bounded_activity": "Study finite-dimensional spectral gaps and document the obstacles to transfer to a continuum quantum theory.",
+      "claim_boundary": "A matrix gap, numerical simulation or Higgs-mechanism explanation does not construct the required quantum Yang–Mills theory.",
+      "official_technical_statement": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf"
+    }
+  ],
+  "general_formal_submission_pipeline_implemented": false,
+  "elementary_formal_pilot": "Four integer statements with pinned Lean source and an axiom-auditing workflow. A successful execution record is required before claiming they have passed verification."
+}

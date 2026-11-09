@@ -1,0 +1,27 @@
+name: Reproduce and verify
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Test certificate and evidence boundaries
+        run: python3 -m unittest discover -s tests -v
+      - name: Reproduce the mathematical teaching pilot
+        run: python3 -m atlas_math demo --output runs/ci --seed 7
+      - name: Reproduce Opsbook learning and executable checks
+        run: python3 scripts/opsbook_bridge.py --output runs/opsbook
+      - name: Validate public records and source provenance
+        run: python3 scripts/validate_repository.py

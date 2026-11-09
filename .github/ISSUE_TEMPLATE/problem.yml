@@ -1,0 +1,35 @@
+name: Propose a mathematical question
+description: Define a sourced question and an inspectable route to investigating it.
+title: "[Question] "
+body:
+  - type: markdown
+    attributes:
+      value: "Read docs/RESEARCH_PROTOCOL.md first. This is a public record; exclude confidential or personal material."
+  - type: textarea
+    id: statement
+    attributes:
+      label: Exact statement and assumptions
+      description: Include domains, quantifiers, boundary cases and any proposed subproblem.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources and prior work
+      description: Give primary links and precise locations. State what you actually read and whether novelty remains unassessed.
+    validations:
+      required: true
+  - type: textarea
+    id: significance
+    attributes:
+      label: Significance and teaching value
+      description: Explain why this question is worth investigating and what others could learn.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Proposed verification and resource limits
+      description: Explain what would count as evidence. Default new external spending is zero.
+    validations:
+      required: true
