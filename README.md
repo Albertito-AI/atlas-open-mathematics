@@ -86,7 +86,11 @@ The initial project requires no paid model account. Local demonstrations and tes
 
 Scheduled checks and any research workers operate in bounded runs, retaining checkpoints for later work. A configured schedule is not evidence that research occurred. Completed runs must leave inspectable outputs, and live model use must identify its provider, model, resource use and limitations.
 
-The [continuing research configuration](docs/AUTOMATION.md) records the daily practice workflow and the separate owner-managed research task. The first [agent-authored investigation](research/agent-attempts/0001/record.md) has a [teaching companion](lessons/001-domain-matters.md).
+The [continuing research configuration](docs/AUTOMATION.md) records the daily practice workflow and the owner-managed research task's integration with Atlas Flexible Workflow 1.2. The research task retains a daily flexible morning schedule, follows current priorities and protected duties, and preserves exact-version checkpoints between bounded iterations. Each contribution has one accountable owner; only one non-incident engineering slice is active within the coordinated programme.
+
+Research, recorded outcomes and teaching remain the priority. Useful public results are handed to the existing GitHub Adoption, Daily Website Resource Refresh and Website Care and Reach lanes with evidence and source versions. The designated publisher handles website changes. The first [agent-authored investigation](research/agent-attempts/0001/record.md) has a [teaching companion](lessons/001-domain-matters.md).
+
+Public material remains available under its stated licences. Access to additional private library material is considered through individual enquiries, case by case. Pricing and access administration are separate work and do not hold up research or permitted teaching.
 
 ## Rights and responsibility
 
