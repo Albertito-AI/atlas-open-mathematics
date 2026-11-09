@@ -33,7 +33,7 @@ Atlas Agent School informs the curriculum design. Only deliberately selected and
 
 ## Formal proof development
 
-The [elementary formal pilot](../formal/README.md) contains four statements about integer equations, a pinned Lean toolchain and a theorem-specific checker with an axiom audit. Its documentation identifies the precise scope and trust assumptions. A successful check must be evidenced by an actual local or GitHub run.
+The [elementary formal pilot](../formal/README.md) contains four statements about integer equations, a pinned Lean toolchain and a theorem-specific checker with an axiom audit. Its documentation identifies the precise scope and trust assumptions. The [local verification record](../formal/evidence/2026-11-09.json) shows that all four statements passed Lean 4.24.0 on 9 November 2026. Remote CI completion is assessed from its own workflow run.
 
 A broader Lean and mathlib track must preserve a trusted target statement, pin toolchain and library versions, inspect transitive axiom dependencies and replay proofs independently. Rejecting unfinished proofs is necessary. It is also necessary to inspect whether the statement and definitions express the intended mathematics. Accepting arbitrary generated code requires additional isolation and a trusted challenge statement; the reviewed pilot's source checks do not provide that boundary.
 

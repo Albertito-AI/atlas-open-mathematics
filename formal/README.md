@@ -36,7 +36,10 @@ constructs proof terms checked by Lean's kernel.
 
 The workflow [formal.yml](../.github/workflows/formal.yml) uses an exact official
 release archive and its SHA-256 digest, checked against GitHub's release
-metadata on 9 November 2026. It has read-only repository permissions, no model
+metadata on 9 November 2026. It downloads the pinned release asset through
+GitHub's official release-asset API with `Accept: application/octet-stream`.
+The ordinary release download URL returned HTTP 504 during the first run;
+the API route retrieved the same checksum-verified archive. It has read-only repository permissions, no model
 keys, no extra packages and a fifteen-minute timeout. The binary is downloaded
 afresh to the disposable runner. Dependency download availability can prevent a
 run; it does not change proof status.
@@ -58,3 +61,13 @@ proof-building environment.
 A successful local or GitHub run is the evidence for acceptance of these
 statements under the recorded assumptions. The existence of this workflow or
 documentation alone is not evidence that it passed.
+
+## Recorded local verification
+
+On 9 November 2026, the official archive's SHA-256 matched the pinned digest
+and all four statements passed Lean 4.24.0 locally. Every printed dependency
+report contained only `propext`, `Classical.choice` and `Quot.sound`.
+The [machine-readable record](evidence/2026-11-09.json) preserves the full
+compiler version, source hash and assumption reports. GitHub CI status must be
+read separately from its workflow run; local success does not establish that a
+remote run completed.

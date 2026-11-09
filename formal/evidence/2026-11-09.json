@@ -1,0 +1,30 @@
+{
+  "checker": "Pinned Lean kernel with transitive axiom inspection; no independent external checker",
+  "lean_version": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "output": "'Atlas.two_equation_consequences' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Atlas.two_equation_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Atlas.concrete_solution' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Atlas.incompatible_parity' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "scope": "Four integer linear-equation statements; no claim about Python correctness or Millennium problems",
+  "source_sha256": "1db8bfcb09c29659c40280690653bd568b9b35cd7fdc5d456187733cb20c3454",
+  "status": "kernel-checked-known-supporting-algebra",
+  "theorems": {
+    "Atlas.concrete_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Atlas.incompatible_parity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Atlas.two_equation_consequences": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Atlas.two_equation_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

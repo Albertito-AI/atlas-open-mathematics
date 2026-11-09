@@ -66,7 +66,7 @@ The verifier accepts structured mathematical data. It does not run commands supp
 
 The [architecture](docs/ARCHITECTURE.md) distinguishes implemented components from future integrations. Instructions retained by Opsbook change the context and procedures supplied to a subsequent agent. They do not by themselves retrain the underlying model.
 
-The Lean pilot checks four elementary statements about a particular family of integer equations. It includes a pinned toolchain, theorem-source checks and an axiom audit. It does not prove the correctness of the Python implementation or a Millennium conjecture. Consult its actual verification output before assigning a passing status.
+The Lean pilot checks four elementary statements about a particular family of integer equations. All four passed a local Lean 4.24.0 kernel check and axiom audit on 9 November 2026; the [recorded evidence](formal/evidence/2026-11-09.json) identifies the precise source and environment. It does not prove the correctness of the Python implementation or a Millennium conjecture. Remote CI status is recorded separately by GitHub Actions.
 
 ## Take part
 
@@ -85,6 +85,8 @@ Problems are selected for mathematical significance and tractability. Generating
 The initial project requires no paid model account. Local demonstrations and tests use Python's standard library. Work must stop when its authorised resources are exhausted. No contributor is asked to purchase compute or supply credentials.
 
 Scheduled checks and any research workers operate in bounded runs, retaining checkpoints for later work. A configured schedule is not evidence that research occurred. Completed runs must leave inspectable outputs, and live model use must identify its provider, model, resource use and limitations.
+
+The [continuing research configuration](docs/AUTOMATION.md) records the daily practice workflow and the separate owner-managed research task. The first [agent-authored investigation](research/agent-attempts/0001/record.md) has a [teaching companion](lessons/001-domain-matters.md).
 
 ## Rights and responsibility
 
