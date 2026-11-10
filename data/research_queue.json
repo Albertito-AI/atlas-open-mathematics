@@ -44,9 +44,21 @@
       "priority": 2,
       "statement": "For integers a,b,c,d with D=ad-bc nonzero, classify when for every integer p,q, D divides aq-cp implies an integer solution of ax+by=p, cx+dy=q. Reviewed proposed classification: gcd(|a|,|c|)=1.",
       "prior_work": "research/agent-attempts/0002/record.md#next-question-q0004",
-      "next_step": "Freeze the quantified general statement, review a Bezout-based construction and formalise both directions. Keep nonnegative/capacity constraints separate.",
+      "next_step": "Formalise both directions of the unchanged universal criterion. Reuse separately checked finite construction evidence in attempt 0003 without treating it as a universal proof.",
       "acceptance": "Both directions, signed and zero coefficients, determinant and gcd assumptions explicit; independent statement review, pinned proof replay and axiom audit; no assumptions inserted to force success.",
-      "novelty": "Elementary generalisation of established linear Diophantine theory; no novelty claim. Exact literature match not established; search was not exhaustive."
+      "novelty": "Elementary generalisation of established linear Diophantine theory; no novelty claim. Exact literature match not established; search was not exhaustive.",
+      "computational_evidence": "research/agent-attempts/0003/record.md"
+    },
+    {
+      "id": "Q0005",
+      "priority": 4,
+      "stage": "known-mathematics-prerequisite",
+      "status": "open",
+      "title": "Integer feasibility at the singular boundary",
+      "statement": "Classify integer solutions of a two-by-two integer system with determinant zero, treating a zero row and the zero matrix explicitly.",
+      "prior_work": "research/agent-attempts/0003/record.md",
+      "next_step": "Freeze rank-zero and rank-one cases; derive consistency and gcd conditions and verify constructive certificates.",
+      "novelty": "Known mathematics; no novelty claim"
     }
   ]
 }
