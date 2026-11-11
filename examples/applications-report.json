@@ -1,0 +1,608 @@
+{
+  "agent_learning_measured": false,
+  "applications": [
+    {
+      "cases": [
+        {
+          "A": [
+            [
+              3,
+              2
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          "b": [
+            8,
+            7
+          ],
+          "formal_implementation_proof": false,
+          "id": "whole-batches",
+          "integer_certificate": {
+            "cramer_numerators": [
+              26,
+              13
+            ],
+            "determinant": 13,
+            "kind": "unique_solution_divisibility",
+            "remainders_mod_abs_determinant": [
+              0,
+              0
+            ]
+          },
+          "integer_feasible": true,
+          "integer_witness": [
+            2,
+            1
+          ],
+          "nonnegative_certificate": {
+            "kind": "direct_nonnegative_witness"
+          },
+          "nonnegative_integer_feasible": true,
+          "nonnegative_integer_witness": [
+            2,
+            1
+          ],
+          "rational_candidate": {
+            "certificate": {
+              "determinant": "13"
+            },
+            "solution": [
+              "2",
+              "1"
+            ],
+            "status": "unique"
+          },
+          "rational_status": "unique",
+          "rational_verification": {
+            "accepted": true,
+            "reason": "exact substitution and nonzero determinant prove a unique solution"
+          },
+          "title": "Two of batch A and one of batch B meet both totals",
+          "verification_status": "exact-instance-checked"
+        },
+        {
+          "A": [
+            [
+              3,
+              2
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          "b": [
+            9,
+            7
+          ],
+          "formal_implementation_proof": false,
+          "id": "fractional-only",
+          "integer_certificate": {
+            "cramer_numerators": [
+              31,
+              12
+            ],
+            "determinant": 13,
+            "kind": "unique_solution_divisibility",
+            "remainders_mod_abs_determinant": [
+              5,
+              12
+            ]
+          },
+          "integer_feasible": false,
+          "integer_witness": null,
+          "nonnegative_certificate": {
+            "kind": "unique_rational_solution_is_not_integral"
+          },
+          "nonnegative_integer_feasible": false,
+          "nonnegative_integer_witness": null,
+          "rational_candidate": {
+            "certificate": {
+              "determinant": "13"
+            },
+            "solution": [
+              "31/13",
+              "12/13"
+            ],
+            "status": "unique"
+          },
+          "rational_status": "unique",
+          "rational_verification": {
+            "accepted": true,
+            "reason": "exact substitution and nonzero determinant prove a unique solution"
+          },
+          "title": "Rational totals can fail whole-batch feasibility",
+          "verification_status": "exact-instance-checked"
+        },
+        {
+          "A": [
+            [
+              3,
+              2
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          "b": [
+            1,
+            9
+          ],
+          "formal_implementation_proof": false,
+          "id": "negative-integral",
+          "integer_certificate": {
+            "cramer_numerators": [
+              -13,
+              26
+            ],
+            "determinant": 13,
+            "kind": "unique_solution_divisibility",
+            "remainders_mod_abs_determinant": [
+              0,
+              0
+            ]
+          },
+          "integer_feasible": true,
+          "integer_witness": [
+            -1,
+            2
+          ],
+          "nonnegative_certificate": {
+            "kind": "unique_solution_has_negative_coordinate",
+            "negative_coordinates": [
+              0
+            ]
+          },
+          "nonnegative_integer_feasible": false,
+          "nonnegative_integer_witness": null,
+          "rational_candidate": {
+            "certificate": {
+              "determinant": "13"
+            },
+            "solution": [
+              "-1",
+              "2"
+            ],
+            "status": "unique"
+          },
+          "rational_status": "unique",
+          "rational_verification": {
+            "accepted": true,
+            "reason": "exact substitution and nonzero determinant prove a unique solution"
+          },
+          "title": "Integral quantities can fail nonnegativity",
+          "verification_status": "exact-instance-checked"
+        },
+        {
+          "A": [
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "additional_integer_witness": [
+            2,
+            1
+          ],
+          "additional_witness_checked": true,
+          "b": [
+            5,
+            10
+          ],
+          "formal_implementation_proof": false,
+          "id": "dependent-totals",
+          "integer_certificate": {
+            "bezout": {
+              "identity": 1,
+              "u": 0,
+              "v": 1
+            },
+            "direction": [
+              1,
+              -2
+            ],
+            "kind": "rank_one_integer_family",
+            "parameter_domain": "integers",
+            "particular": [
+              0,
+              5
+            ],
+            "row_gcd": 1,
+            "row_index": 0
+          },
+          "integer_feasible": true,
+          "integer_witness": [
+            0,
+            5
+          ],
+          "nonnegative_certificate": {
+            "chosen_parameter": 0,
+            "fixed_coordinate_negative": false,
+            "integer_parameter_lower": 0,
+            "integer_parameter_upper": 2,
+            "kind": "integer_parameter_bounds"
+          },
+          "nonnegative_integer_feasible": true,
+          "nonnegative_integer_witness": [
+            0,
+            5
+          ],
+          "rational_candidate": {
+            "certificate": {
+              "null_vector": [
+                "-1",
+                "2"
+              ]
+            },
+            "solution": [
+              "5/2",
+              "0"
+            ],
+            "status": "underdetermined"
+          },
+          "rational_status": "underdetermined",
+          "rational_verification": {
+            "accepted": true,
+            "reason": "exact particular solution and nonzero null vector prove nonuniqueness"
+          },
+          "title": "A fractional particular solution does not decide integer existence",
+          "verification_status": "exact-instance-checked"
+        },
+        {
+          "A": [
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "b": [
+            5,
+            11
+          ],
+          "formal_implementation_proof": false,
+          "id": "contradictory-totals",
+          "integer_certificate": {
+            "kind": "rational_inconsistency",
+            "row_weights": [
+              "-4",
+              "2"
+            ]
+          },
+          "integer_feasible": false,
+          "integer_witness": null,
+          "nonnegative_certificate": {
+            "kind": "no_rational_solution"
+          },
+          "nonnegative_integer_feasible": false,
+          "nonnegative_integer_witness": null,
+          "rational_candidate": {
+            "certificate": {
+              "row_weights": [
+                "-4",
+                "2"
+              ]
+            },
+            "status": "inconsistent"
+          },
+          "rational_status": "inconsistent",
+          "rational_verification": {
+            "accepted": true,
+            "reason": "exact row combination proves inconsistency"
+          },
+          "title": "Dependent rows with conflicting totals are inconsistent",
+          "verification_status": "exact-instance-checked"
+        },
+        {
+          "A": [
+            [
+              2,
+              4
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "b": [
+            1,
+            2
+          ],
+          "formal_implementation_proof": false,
+          "id": "rank-one-lattice-obstruction",
+          "integer_certificate": {
+            "coefficient_remainders": [
+              0,
+              0
+            ],
+            "divisor": 2,
+            "kind": "row_gcd_obstruction",
+            "rhs_remainder": 1,
+            "row_index": 0
+          },
+          "integer_feasible": false,
+          "integer_witness": null,
+          "nonnegative_certificate": {
+            "kind": "no_integer_solution"
+          },
+          "nonnegative_integer_feasible": false,
+          "nonnegative_integer_witness": null,
+          "rational_candidate": {
+            "certificate": {
+              "null_vector": [
+                "-4",
+                "2"
+              ]
+            },
+            "solution": [
+              "1/2",
+              "0"
+            ],
+            "status": "underdetermined"
+          },
+          "rational_status": "underdetermined",
+          "rational_verification": {
+            "accepted": true,
+            "reason": "exact particular solution and nonzero null vector prove nonuniqueness"
+          },
+          "title": "A row gcd can exclude whole batches in a consistent rational system",
+          "verification_status": "exact-instance-checked"
+        }
+      ],
+      "id": "whole-batch-allocation",
+      "limitations": [
+        "No real inventory, capacity, cost, legal or operational data are supplied",
+        "Feasibility is not optimisation or authority to execute a plan",
+        "Singular boundary handling uses established Diophantine arithmetic; no new Q0005 theorem is claimed"
+      ],
+      "problem_ids": [
+        "Q0001",
+        "Q0005-boundary"
+      ],
+      "scope": "Exact synthetic two-recipe totals with integer and nonnegativity constraints",
+      "title": "Whole-batch resource allocation and consistent totals",
+      "verification_status": "exact-instance-checked"
+    },
+    {
+      "cases": [
+        {
+          "A": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          "applicable": true,
+          "b": [
+            7,
+            13
+          ],
+          "bezout": {
+            "identity": 1,
+            "u": -1,
+            "v": 1
+          },
+          "determinant": 5,
+          "first_column_gcd": 1,
+          "formal_status": "Q0004-universal-formalisation-pending",
+          "id": "primitive-construction",
+          "integer_feasible": true,
+          "k": 1,
+          "residual": [
+            4,
+            6
+          ],
+          "solution": [
+            2,
+            1
+          ],
+          "status": "integer_witness_constructed",
+          "verification": {
+            "accepted": true,
+            "reason": "exact substitution and nonzero determinant prove a unique solution"
+          },
+          "verification_status": "exact-instance-checked",
+          "y_numerator": 5
+        },
+        {
+          "A": [
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              3
+            ]
+          ],
+          "applicable": false,
+          "b": [
+            1,
+            2
+          ],
+          "bezout": {
+            "identity": 2,
+            "u": 1,
+            "v": 0
+          },
+          "counterexample": {
+            "b": [
+              1,
+              2
+            ],
+            "integer_feasible": false,
+            "one_divisibility_test_passes": true,
+            "rational_candidate": {
+              "certificate": {
+                "determinant": "2"
+              },
+              "solution": [
+                "1/2",
+                "0"
+              ],
+              "status": "unique"
+            },
+            "verification": {
+              "accepted": true,
+              "reason": "exact substitution and nonzero determinant prove a unique solution"
+            },
+            "y_numerator": 0
+          },
+          "determinant": 2,
+          "first_column_gcd": 2,
+          "formal_status": "Q0004-universal-formalisation-pending",
+          "id": "nonprimitive-counterexample",
+          "limitation": "The counterexample concerns the displayed obstruction right-hand side, not every right-hand side",
+          "status": "primitive_column_precondition_fails",
+          "verification_status": "exact-instance-checked"
+        }
+      ],
+      "id": "constructive-integer-certificates",
+      "limitations": [
+        "The construction illustrates established mathematics and the retained Q0004 argument",
+        "These finite substitutions do not close Q0004's universal formalisation gate"
+      ],
+      "problem_ids": [
+        "Q0004"
+      ],
+      "scope": "Nonsingular integer matrices with an explicit primitive-column condition",
+      "title": "Construct and check an integer allocation certificate",
+      "universal_formalisation": "pending",
+      "verification_status": "exact-instance-checked"
+    },
+    {
+      "cases": [
+        {
+          "alpha": "1/20",
+          "assignments_enumerated": 4096,
+          "assumptions": [
+            "Independent fair assignment within each matched pair",
+            "Sharp null: assignment changes neither session's binary outcome",
+            "Frozen one-sided alternative, scoring rule, sample and missingness policy",
+            "No optional stopping or substitution of favourable outcomes"
+          ],
+          "crosses_predeclared_threshold": false,
+          "discordant_pairs": 12,
+          "favourable_tail_assignments": 299,
+          "formula_matches_enumeration": true,
+          "id": "nine-to-three",
+          "losses": 3,
+          "observed_agent_sessions": 0,
+          "one_sided_p": "299/4096",
+          "pairs": 12,
+          "ties": 0,
+          "wins": 9
+        },
+        {
+          "alpha": "1/20",
+          "assignments_enumerated": 4096,
+          "assumptions": [
+            "Independent fair assignment within each matched pair",
+            "Sharp null: assignment changes neither session's binary outcome",
+            "Frozen one-sided alternative, scoring rule, sample and missingness policy",
+            "No optional stopping or substitution of favourable outcomes"
+          ],
+          "crosses_predeclared_threshold": true,
+          "discordant_pairs": 12,
+          "favourable_tail_assignments": 79,
+          "formula_matches_enumeration": true,
+          "id": "ten-to-two",
+          "losses": 2,
+          "observed_agent_sessions": 0,
+          "one_sided_p": "79/4096",
+          "pairs": 12,
+          "ties": 0,
+          "wins": 10
+        },
+        {
+          "alpha": "1/20",
+          "assignments_enumerated": 1,
+          "assumptions": [
+            "Independent fair assignment within each matched pair",
+            "Sharp null: assignment changes neither session's binary outcome",
+            "Frozen one-sided alternative, scoring rule, sample and missingness policy",
+            "No optional stopping or substitution of favourable outcomes"
+          ],
+          "crosses_predeclared_threshold": false,
+          "discordant_pairs": 0,
+          "favourable_tail_assignments": 1,
+          "formula_matches_enumeration": true,
+          "id": "all-tied",
+          "losses": 0,
+          "observed_agent_sessions": 0,
+          "one_sided_p": "1",
+          "pairs": 12,
+          "ties": 12,
+          "wins": 0
+        }
+      ],
+      "id": "paired-evaluation-design",
+      "learner_study_status": "not_executed",
+      "limitations": [
+        "No learner responses or human learning outcomes were collected",
+        "The 12-pair proposal requires 12 complete frozen pairs and independent blinded scoring",
+        "A small p-value under the assumptions does not measure effect size or generalisation",
+        "Ties require raw group totals: both groups could be right or both wrong"
+      ],
+      "problem_ids": [
+        "Q0002"
+      ],
+      "scope": "Exact randomisation tails for illustrative matched binary outcomes",
+      "title": "Check what a proposed learning comparison could establish",
+      "verification_status": "exact-finite-calculation"
+    }
+  ],
+  "command": "python -m atlas_math applications",
+  "difficulty": "warm_up_only",
+  "established_mathematics": true,
+  "frontier_challenge_solved": false,
+  "implementation_version": "applications-0.1",
+  "live_model": false,
+  "millennium_progress_claimed": false,
+  "novel_mathematics_claimed": false,
+  "observed_agent_sessions": 0,
+  "purpose": "Inspect domain, feasibility, counterexamples and study assumptions before attempting the separate advanced challenge programme",
+  "report_kind": "applied_mathematics_warmup",
+  "schema_version": 1,
+  "source_commit": "45e4042884119a0496755c48083846ed85634b79",
+  "source_commit_role": "pinned research background; the applications module is a subsequent implementation",
+  "sources": [
+    {
+      "problem_id": "Q0001",
+      "url": "https://github.com/Albertito-AI/atlas-open-mathematics/blob/45e4042884119a0496755c48083846ed85634b79/research/agent-attempts/0002/record.md"
+    },
+    {
+      "problem_id": "Q0004",
+      "url": "https://github.com/Albertito-AI/atlas-open-mathematics/blob/45e4042884119a0496755c48083846ed85634b79/research/agent-attempts/0003/record.md"
+    },
+    {
+      "problem_id": "Q0002",
+      "url": "https://github.com/Albertito-AI/atlas-open-mathematics/blob/45e4042884119a0496755c48083846ed85634b79/research/agent-attempts/0004/record.md"
+    },
+    {
+      "problem_id": "verification-policy",
+      "url": "https://github.com/Albertito-AI/atlas-open-mathematics/blob/45e4042884119a0496755c48083846ed85634b79/docs/VERIFICATION.md"
+    }
+  ],
+  "synthetic": true,
+  "verification_limits": [
+    "Python and its arithmetic/verifiers remain trusted dependencies",
+    "Public worked examples cannot serve as protected examinations",
+    "This report does not retrain an agent, award competence or authorise external action"
+  ]
+}

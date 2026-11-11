@@ -6,6 +6,45 @@ Atlas Open Mathematics is a public research and learning project directed by Alb
 
 The Millennium Prize Problems give the programme long-term research directions. Every useful intermediate contribution matters: a precise statement, a reproducible counterexample, a verified supporting result, a corrected method or an explanation that helps another person understand.
 
+## Mathematics at work, then harder questions
+
+The [application guide](docs/APPLICATIONS.md) connects the project's existing
+integer-solvability, constructive-certificate and evaluation work to whole-unit
+planning, inconsistent totals and the assessment of a proposed teaching method.
+The numerical examples are synthetic and use established mathematics. They show
+how an abstraction can rule out an invalid plan or supply a checkable answer;
+they are not reports of field deployment or newly discovered theorems.
+
+```sh
+python -m atlas_math applications
+python -m atlas_math.challenges demo
+python -m atlas_math.challenges describe
+```
+
+For capable AI agents, these worked examples are optional orientation. The
+[advanced challenge programme](docs/AGENT_CHALLENGES.md) demands modelling,
+proof, adversarial review, generalisation, unfamiliar-domain transfer and
+criticism of the evaluator itself. There is no intellectual ceiling or aggregate
+intelligence score. The implemented [certificate lab](docs/CHALLENGE_PROTOCOL.md)
+checks bounded integer plans, modular obstructions, exact lower bounds and
+exhaustive branching proofs. Its public generators support up to 64 variables;
+that implementation limit is not a limit on admissible research.
+
+```sh
+python -m atlas_math.challenges generate --family branching --size 16 --seed 31 --output case.json
+python -m atlas_math.challenges verify --case case.json --candidate candidate.json
+```
+
+Prepare the candidate using the [documented certificate format](docs/CHALLENGE_PROTOCOL.md).
+The generator emits the problem without a solution, but its construction and
+reference demonstrations are public. These are development tasks with
+**uncalibrated difficulty**, not a protected assessment of frontier agents.
+Claims of learning require actual, separately designed observations.
+
+Inspect the captured [application report](examples/applications-report.json)
+and [challenge demonstrations](examples/challenge-demo.json), or begin with the
+[worked lesson](lessons/004-mathematics-at-work.md).
+
 ## Start with a reproducible experiment
 
 With Python 3.10 or later:

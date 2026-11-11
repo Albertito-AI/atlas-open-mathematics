@@ -28,6 +28,10 @@ jobs:
         run: python3 scripts/replay_research.py
       - name: Reproduce the mathematical teaching pilot
         run: python3 -m atlas_math demo --output runs/ci --seed 7
+      - name: Reproduce exact practical applications
+        run: python3 -m atlas_math applications --output runs/ci/applications.json
+      - name: Check the public bounded integer challenge constructions
+        run: python3 -m atlas_math.challenges demo
       - name: Reproduce Opsbook learning and executable checks
         run: python3 scripts/opsbook_bridge.py --output runs/opsbook
       - name: Validate public records and source provenance

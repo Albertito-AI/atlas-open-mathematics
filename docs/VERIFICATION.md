@@ -84,3 +84,58 @@ Retain the statement, source, exact input, proposal, verifier version, result, r
 Keep training examples, retrieved worked solutions and held-out evaluation problems separately labelled. Record any known overlap. Freeze benchmarks before comparison, report all attempted cases, and do not select only successful runs for public metrics. For a novelty claim, check the literature and known databases independently, retaining the search date and sources.
 
 Verification policy reviewed on 9 November 2026.
+
+## Applications and advanced certificate lab, 11 November 2026
+
+The [application module](../atlas_math/applications.py) adds exact integer and
+nonnegative-integer interpretations to the existing rational pilot. Its
+rank-one branch uses a gcd obstruction or an integer parameter family. A
+fractional particular solution returned by a rational solver is never alone
+treated as proof of integer infeasibility. The constructive branch implements
+the recorded Bézout argument and checks its output by substitution. The paired
+evaluation example checks an exact tail against enumeration; it contains no
+learner observations. The source references identify the earlier research
+commit, not the later application implementation.
+
+The separate [challenge module](../atlas_math/challenges.py) checks
+`A x = b`, integer `x`, explicit integer lower and upper bounds, and an integer
+linear objective. It verifies witnesses, lower bounds, integer rounding,
+modular and interval obstructions, and complete binary branch proofs. It never
+calls a solver while verifying or executes candidate code. The
+[protocol](CHALLENGE_PROTOCOL.md) states the identities, supported certificates
+and implementation bounds. A refused certificate can be incomplete or outside
+the supported language; refusal does not establish that the underlying claim
+is false.
+
+Reproduce the new demonstrations with:
+
+```sh
+python -m atlas_math applications
+python -m atlas_math.challenges demo
+python -m unittest discover -s tests -v
+```
+
+The tests include independent enumeration of small integer problems, feasible
+but suboptimal candidates, a coupled modular obstruction despite primitive
+individual rows, integrality gaps, signed coefficients, fixed variables,
+branch coverage, changed-target identities, malformed data and bounded input
+handling. Tests establish their recorded finite scope. The Python checker has
+no universal formal correctness proof. Existing Lean targets and accepted
+mathematical evidence are unchanged.
+
+All bundled constructions and captured outputs are exposed synthetic material.
+They establish no frontier-agent difficulty calibration, model-weight update,
+causal learning effect, real-world deployment or novel mathematical result.
+The research programme above the lab includes proof and transfer questions that
+require their own evidence and independent review.
+
+Observed local verification on 11 November 2026 used Python 3.12.14: **96 tests
+passed**, the repository validator checked 97 JSON files, and Q0001's finite
+record, Q0004's finite construction record and Q0002's calibration replayed
+exactly. A separate agent added and ran seven independent review tests,
+including exhaustive checks on 90 small signed rectangular models, forged
+claims, branch separation and the exact proof-node and depth boundaries.
+No unsound acceptance was found within those finite checks. The recorded
+example in lesson 004 was also executed. Existing Lean source and proof
+policies were not changed or rerun locally for this application work; hosted
+workflow results are separate evidence at the GitHub revision being reviewed.
