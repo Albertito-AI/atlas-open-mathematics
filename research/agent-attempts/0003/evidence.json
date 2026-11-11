@@ -1,0 +1,31 @@
+{
+  "bounds": {
+    "matrix_entries": [
+      -3,
+      3
+    ],
+    "rhs_entries": [
+      -3,
+      3
+    ]
+  },
+  "command": "python research/agent-attempts/0003/check.py",
+  "counts": {
+    "constructive_witnesses": 27040,
+    "matrices": 2112,
+    "negative_determinants": 1056,
+    "nonprimitive": 672,
+    "obstruction_witnesses": 672,
+    "primitive": 1440,
+    "rhs_checked": 103488,
+    "shortcut_false_positives": 10944,
+    "singular_excluded": 289,
+    "zero_entry_matrices": 936
+  },
+  "ordered_case_sha256": "b40f1ed71c9611de6acbd46267861cc73fa877ddc1d0c2f226714a7378fe6b3e",
+  "scope": "All stated finite cases only; no new Lean proof, novelty or measured learning",
+  "script_sha256": "c6fe02a41b3baf3224e9f1d291b85a846d96f51fb60e97b280c6da4b4246658c",
+  "source_base": "e829b52ef6ca89e7409a7b950d829870f19529dd",
+  "status": "finite-certificate-checks-passed",
+  "verifier_sha256": "2bcaea6a94d35426910e4b3dbca665a9bb8d541d3286fc39e9b1e2e309a70c60"
+}
