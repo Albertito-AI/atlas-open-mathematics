@@ -34,6 +34,13 @@ python -m unittest discover -s tests -v
 
 The tests use hand-constructed rational examples and independently check the identities of generated certificates. They include a zero initial pivot, singular consistent and inconsistent systems, the zero matrix, wrong answers, false determinants, zero null vectors, invalid contradiction certificates, misleading metadata, malformed inputs, booleans, floats, excessive values, deterministic generation and existing-record protection. A patched solver that raises during verification tests the separation between solver and verifier.
 
+Run `python3 scripts/replay_research.py` to reproduce the retained Q0001 finite
+examples, Q0004 bounded construction and Q0002 exact calibration. Each script's
+parsed JSON must match its retained evidence exactly. A failed process, changed
+result or missing record fails the check. The ordinary verification workflow
+includes these replays. They establish reproducibility within the stated finite
+bounds; the calibration remains a design check with no learner observations.
+
 Attempt records are content-addressed. Repeating a deterministic run should preserve the existing bytes. A collision or inconsistent existing file must stop the write rather than replace the evidence. Content addressing helps detect changes; an operator with write access can still delete or alter files. Retain Git history and backups before treating records as a durable audit trail.
 
 ## Evidence labels
@@ -58,6 +65,13 @@ Lean 4.24.0 is pinned in [formal/lean-toolchain](../formal/lean-toolchain); this
 On 9 November 2026, all four statements passed an actual local run of the pinned Lean checker. The downloaded official release archive matched the recorded SHA-256 digest. Every theorem's transitive axiom report contained only `propext`, `Classical.choice` and `Quot.sound`. The [verification evidence](../formal/evidence/2026-11-09.json) preserves the complete compiler version, theorem-source hash and printed reports. The ordinary release URL initially returned HTTP 504; GitHub's official release-asset API delivered the same archive successfully. Remote CI completion remains a separate claim requiring its own successful workflow run.
 
 The next formal stage requires a reviewed mathematical statement, pinned Lean and mathlib revisions, proof source, a build that includes the theorem module, and a transitive axiom audit. The standard allowlist is a subset of `propext`, `Classical.choice` and `Quot.sound`. Reject `sorryAx` and unapproved custom axioms. A proof that relies on native computation needs a separate, explicitly disclosed trust category; it does not pass the strict kernel-only policy.
+
+From the 11 November maintenance change, the workflow also runs the separate
+[Q0001 checker](../scripts/check_integer_criterion.py) over the unchanged module
+whose original source hash appears in its [local evidence](../research/agent-attempts/0002/formal-evidence.json).
+The new checker pins that source hash and reuses the existing axiom auditor.
+The original pilot's checker and the axiom allowlist are unchanged. Q0004's
+universal formalisation and Q0002's actual learner evaluation remain open.
 
 For unreviewed generated proofs, use a sandbox without credentials or unnecessary network access. Replay proofs with `lean4checker`. For major claims, compare against a separately trusted challenge statement with `comparator` and an external checker. Even successful formal checking does not show that a mistranslated statement matches the intended conjecture. Review quantifiers, domains, assumptions, definitions and vacuous hypotheses independently.
 

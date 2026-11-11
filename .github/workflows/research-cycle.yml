@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   cycle:
-    if: github.repository == 'Albertito-AI/atlas-open-mathematics'
+    if: github.repository == 'Albertito-AI/atlas-open-mathematics' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:

@@ -44,6 +44,35 @@ keys, no extra packages and a fifteen-minute timeout. The binary is downloaded
 afresh to the disposable runner. Dependency download availability can prevent a
 run; it does not change proof status.
 
+## Additional fixed module: Q0001
+
+The [Q0001 module](../research/agent-attempts/0002/IntegerCriterion.lean)
+states necessary divisibility, an explicit integer witness, the exact
+solvability criterion and uniqueness for `2x+3y=p` and `-x+4y=q`.
+Its [original evidence](../research/agent-attempts/0002/formal-evidence.json)
+records local checking on 9 November 2026. The module and the original pilot
+are separate proof targets.
+
+Run its dedicated check from the repository root:
+
+```sh
+python3 scripts/check_integer_criterion.py --lean /path/to/lean
+```
+
+The checker requires the reviewed source SHA-256 before executing Lean,
+then checks the same pinned compiler and original axiom allowlist. A changed
+statement requires a separate review before that source digest is updated.
+All four expected reports must be present exactly once, with no warning,
+compiler failure or unapproved axiom. The hosted formal workflow runs both
+checkers. Unit tests use a compiler stub to test rejection paths; only actual
+Lean execution checks the mathematics.
+
+This extension does not formalise the general Q0004 theorem or verify any
+Python implementation. It does not collect human or agent-learning outcomes.
+The [11 November local replay](evidence/2026-11-11-q0001-local.json) records
+actual execution of the dedicated checker against the checksum-verified Lean
+distribution. Hosted execution is evidenced separately by its Actions run.
+
 ## Trust and review
 
 Read the Lean statements in [Atlas.lean](Atlas.lean) and compare them with the

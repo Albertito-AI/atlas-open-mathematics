@@ -17,6 +17,18 @@ scripted practice. It is not evidence of a model learning or making a discovery.
 GitHub scheduling may be delayed or a run may fail; the saved run and commit
 establish what actually happened.
 
+The publishing job is restricted to `main`. The read-only verification and
+formal workflows also follow each successful practice-cycle completion on
+`main`, using GitHub's `workflow_run` event. This checks the default-branch
+commit present when that follow-up run is created. The completion trigger is
+needed because a push made with `GITHUB_TOKEN` does not trigger ordinary push
+workflows. It creates no feedback loop: the follow-up checks do not trigger or
+publish a practice cycle. No token permission has been increased.
+GitHub documents the [token-trigger restriction](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow)
+and [workflow completion events](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_run).
+As with every hosted check, inspect its actual `head_sha` and conclusion before
+claiming that a particular commit passed.
+
 An owner-managed **Atlas Mathematics Research** task was enabled on 9 November
 2026 for a daily morning research iteration, starting on 10 November in the
 Asia/Singapore timezone. It reads the current queue and prior attempts, develops
