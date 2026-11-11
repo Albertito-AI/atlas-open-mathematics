@@ -1,0 +1,94 @@
+{
+  "all_discordant_examples": {
+    "wins_10_of_12_p": "79/4096",
+    "wins_9_of_12_p": "299/4096"
+  },
+  "alpha": "1/20",
+  "alternative": "lesson improves joint correctness",
+  "assignments_per_row": 4096,
+  "command": "python research/agent-attempts/0004/calibrate.py",
+  "observed_agent_sessions": 0,
+  "pairs": 12,
+  "rows": [
+    {
+      "assignments_rejected": 0,
+      "discordant_pairs": 0,
+      "minimum_treatment_wins_to_reject": null,
+      "rejection_probability_under_sharp_null": "0"
+    },
+    {
+      "assignments_rejected": 0,
+      "discordant_pairs": 1,
+      "minimum_treatment_wins_to_reject": null,
+      "rejection_probability_under_sharp_null": "0"
+    },
+    {
+      "assignments_rejected": 0,
+      "discordant_pairs": 2,
+      "minimum_treatment_wins_to_reject": null,
+      "rejection_probability_under_sharp_null": "0"
+    },
+    {
+      "assignments_rejected": 0,
+      "discordant_pairs": 3,
+      "minimum_treatment_wins_to_reject": null,
+      "rejection_probability_under_sharp_null": "0"
+    },
+    {
+      "assignments_rejected": 0,
+      "discordant_pairs": 4,
+      "minimum_treatment_wins_to_reject": null,
+      "rejection_probability_under_sharp_null": "0"
+    },
+    {
+      "assignments_rejected": 128,
+      "discordant_pairs": 5,
+      "minimum_treatment_wins_to_reject": 5,
+      "rejection_probability_under_sharp_null": "1/32"
+    },
+    {
+      "assignments_rejected": 64,
+      "discordant_pairs": 6,
+      "minimum_treatment_wins_to_reject": 6,
+      "rejection_probability_under_sharp_null": "1/64"
+    },
+    {
+      "assignments_rejected": 32,
+      "discordant_pairs": 7,
+      "minimum_treatment_wins_to_reject": 7,
+      "rejection_probability_under_sharp_null": "1/128"
+    },
+    {
+      "assignments_rejected": 144,
+      "discordant_pairs": 8,
+      "minimum_treatment_wins_to_reject": 7,
+      "rejection_probability_under_sharp_null": "9/256"
+    },
+    {
+      "assignments_rejected": 80,
+      "discordant_pairs": 9,
+      "minimum_treatment_wins_to_reject": 8,
+      "rejection_probability_under_sharp_null": "5/256"
+    },
+    {
+      "assignments_rejected": 44,
+      "discordant_pairs": 10,
+      "minimum_treatment_wins_to_reject": 9,
+      "rejection_probability_under_sharp_null": "11/1024"
+    },
+    {
+      "assignments_rejected": 134,
+      "discordant_pairs": 11,
+      "minimum_treatment_wins_to_reject": 9,
+      "rejection_probability_under_sharp_null": "67/2048"
+    },
+    {
+      "assignments_rejected": 79,
+      "discordant_pairs": 12,
+      "minimum_treatment_wins_to_reject": 10,
+      "rejection_probability_under_sharp_null": "79/4096"
+    }
+  ],
+  "scope": "Exact randomisation calibration under independent fair within-pair assignment and sharp null; no observations",
+  "script_sha256": "ee037713b02c16192a23ca41d5aa911a17b6a390c58fb344059e60885e729eb6"
+}
