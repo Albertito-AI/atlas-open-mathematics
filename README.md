@@ -17,6 +17,7 @@ python -m unittest discover -s tests -v
 python -m atlas_math demo --output runs/local --seed 7
 python scripts/opsbook_bridge.py --output runs/opsbook
 python scripts/validate_repository.py
+python scripts/replay_research.py
 ```
 
 The first pilot uses exact rational arithmetic to solve small systems of linear equations. A deliberately flawed procedure and a corrected solver are checked against the equations. The run records the attempted answers, verification results and a teaching lesson. Its output includes `report.json`, `attempts.jsonl` and `lesson.md`.
@@ -88,7 +89,7 @@ Scheduled checks and any research workers operate in bounded runs, retaining che
 
 The [continuing research configuration](docs/AUTOMATION.md) records the daily practice workflow and the owner-managed research task's integration with Atlas Flexible Workflow 1.2. The research task retains a daily flexible morning schedule, follows current priorities and protected duties, and preserves exact-version checkpoints between bounded iterations. Each contribution has one accountable owner; only one non-incident engineering slice is active within the coordinated programme.
 
-Research, recorded outcomes and teaching remain the priority. Useful public results are handed to the existing GitHub Adoption, Daily Website Resource Refresh and Website Care and Reach lanes with evidence and source versions. The designated publisher handles website changes. The first [agent-authored investigation](research/agent-attempts/0001/record.md) has a [teaching companion](lessons/001-domain-matters.md). The next [completed investigation, Q0001](research/agent-attempts/0002/record.md), proves an exact integer-solvability criterion and records a counterexample to a broader shortcut. Its [lesson on integer feasibility](lessons/002-integer-feasibility.md) includes public practice and a possible batching application. This separate theorem module passed local Lean checking and independent agent replay; the original hosted four-statement pilot remains a distinct check.
+Research, recorded outcomes and teaching remain the priority. Useful public results are handed to the existing GitHub Adoption, Daily Website Resource Refresh and Website Care and Reach lanes with evidence and source versions. The designated publisher handles website changes. The first [agent-authored investigation](research/agent-attempts/0001/record.md) has a [teaching companion](lessons/001-domain-matters.md). The next [completed investigation, Q0001](research/agent-attempts/0002/record.md), proves an exact integer-solvability criterion and records a counterexample to a broader shortcut. Its [lesson on integer feasibility](lessons/002-integer-feasibility.md) includes public practice and a possible batching application. This separate theorem module passed local Lean checking and independent agent replay. The formal workflow now checks it through a [separate fixed-source checker](scripts/check_integer_criterion.py), alongside the unchanged original four-statement pilot. Hosted success still requires a successful run at the stated source version.
 
 Public material remains available under its stated licences. Access to additional private library material is considered through individual enquiries, case by case. Pricing and access administration are separate work and do not hold up research or permitted teaching.
 

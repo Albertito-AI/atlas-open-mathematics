@@ -5,6 +5,10 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+  workflow_run:
+    workflows: [Recorded practice cycle]
+    types: [completed]
+    branches: [main]
 
 permissions:
   contents: read
@@ -15,6 +19,7 @@ concurrency:
 
 jobs:
   lean:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
@@ -35,3 +40,5 @@ jobs:
           tar --zstd -xf "$RUNNER_TEMP/lean.tar.zst" --strip-components=1 -C "$RUNNER_TEMP/atlas-lean"
       - name: Check all four statements and their proof assumptions
         run: python3 scripts/check_formal.py --lean "$RUNNER_TEMP/atlas-lean/bin/lean"
+      - name: Check the reviewed Q0001 criterion and proof assumptions
+        run: python3 scripts/check_integer_criterion.py --lean "$RUNNER_TEMP/atlas-lean/bin/lean"
