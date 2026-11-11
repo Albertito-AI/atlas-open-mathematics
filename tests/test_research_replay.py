@@ -25,6 +25,11 @@ class ResearchReplayTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "failed"):
             replay("script.py", "evidence.json", self.root)
 
+    def test_changed_numeric_type_is_evidence_drift(self):
+        (self.root / "script.py").write_text('print(\'{"checked": 7.0}\')\n')
+        with self.assertRaisesRegex(ValueError, "differs"):
+            replay("script.py", "evidence.json", self.root)
+
     def test_missing_evidence_is_not_a_successful_replay(self):
         (self.root / "script.py").write_text('print(\'{"checked": 7}\')\n')
         with self.assertRaises(OSError):

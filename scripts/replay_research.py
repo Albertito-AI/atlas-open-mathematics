@@ -28,7 +28,10 @@ def replay(script, evidence, root=ROOT):
         raise ValueError(f"Research replay failed for {script}: {result.stderr}")
     actual = json.loads(result.stdout)
     expected = json.loads((root / evidence).read_text())
-    if actual != expected:
+    # Python equality equates booleans/integers and 7/7.0; evidence types matter.
+    if json.dumps(actual, sort_keys=True, allow_nan=False) != json.dumps(
+        expected, sort_keys=True, allow_nan=False
+    ):
         raise ValueError(f"Research output differs from retained evidence: {script}")
 
 
