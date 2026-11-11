@@ -22,9 +22,11 @@
       "stage": "evaluation-design",
       "priority": 2,
       "statement": "Does access to the recorded domain lesson improve an agent response on fresh linear-system tasks?",
-      "next_step": "Design matched runs, fresh reviewer-held tasks and a frozen rubric before collecting outputs. Use only authorised existing model capacity.",
+      "next_step": "Independent custodian prepares fresh cases and blinded scoring; freeze exact texts, model settings, allocation, case hashes and rubric before any learner outputs. No transfer outcomes collected.",
       "acceptance": "Preserve failures and model settings; report sample size and limits; do not infer model-weight changes.",
-      "novelty": "method evaluation proposed; no empirical outcome yet"
+      "novelty": "method evaluation proposed; no empirical outcome yet",
+      "status": "design-proposed-awaiting-independent-execution-manifest",
+      "design_record": "research/agent-attempts/0004/record.md"
     },
     {
       "id": "Q0003",
