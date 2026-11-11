@@ -6,6 +6,7 @@ from pathlib import Path
 import sys
 
 from .engine import generate_case, run_demo, verify
+from .applications import applications_report, write_applications_report
 
 
 MAX_INPUT_BYTES = 16_384
@@ -48,8 +49,14 @@ def main(argv=None) -> int:
     check = subparsers.add_parser("verify", help="check an externally supplied rational linear-system candidate")
     check.add_argument("--case", type=Path, required=True)
     check.add_argument("--candidate", type=Path, required=True)
+    applications = subparsers.add_parser("applications", help="replay exact synthetic application warm-ups; no learning or frontier claim")
+    applications.add_argument("--output", type=Path, help="optional new or byte-identical report JSON file")
     args = parser.parse_args(argv)
     try:
+        if args.command == "applications":
+            result = write_applications_report(args.output) if args.output else applications_report()
+            print(json.dumps(result, sort_keys=True, indent=2))
+            return 0
         if args.command == "verify":
             result = verify(_load_json(args.case), _load_json(args.candidate))
             print(json.dumps(result, sort_keys=True))
