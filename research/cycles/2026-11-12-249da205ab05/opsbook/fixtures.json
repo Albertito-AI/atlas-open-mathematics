@@ -1,0 +1,111 @@
+{
+  "correct_candidate": {
+    "certificate": {
+      "determinant": "-20"
+    },
+    "solution": [
+      "2",
+      "-5"
+    ],
+    "status": "unique"
+  },
+  "incorrect_candidate": {
+    "certificate": {
+      "determinant": "-20"
+    },
+    "solution": [
+      "3",
+      "-5"
+    ],
+    "status": "unique"
+  },
+  "math_cases": [
+    {
+      "A": [
+        [
+          4,
+          -8
+        ],
+        [
+          -7,
+          9
+        ]
+      ],
+      "b": [
+        48,
+        -59
+      ],
+      "id": "case-7b7d05b82131c1729ff52a707168887a88059a018e967bdf66e1737139773ef0",
+      "kind": "unique"
+    },
+    {
+      "A": [
+        [
+          4,
+          -5
+        ],
+        [
+          -3,
+          -8
+        ]
+      ],
+      "b": [
+        -23,
+        -18
+      ],
+      "id": "case-be851c0ba2f9c560a3d0f25f46595765bf2ca615145b7e0e194ac46f087209b5",
+      "kind": "unique"
+    }
+  ],
+  "opsbook_cases": [
+    {
+      "context": {
+        "case": "case-7b7d05b82131c1729ff52a707168887a88059a018e967bdf66e1737139773ef0",
+        "domain": "linear-system",
+        "task": "submit-certificate"
+      },
+      "evidence": "Public synthetic fixture for case-7b7d05b82131c1729ff52a707168887a88059a018e967bdf66e1737139773ef0. Submission requires the independently executed certificate check; reading a note does not.",
+      "expected": [
+        "exact-substitution"
+      ],
+      "id": "practice-submit",
+      "set": "practice"
+    },
+    {
+      "context": {
+        "case": "case-7b7d05b82131c1729ff52a707168887a88059a018e967bdf66e1737139773ef0",
+        "domain": "linear-system",
+        "task": "read-note"
+      },
+      "evidence": "Public synthetic fixture for case-7b7d05b82131c1729ff52a707168887a88059a018e967bdf66e1737139773ef0. Read-only teaching-note control; no certificate is being submitted.",
+      "expected": [],
+      "id": "practice-read",
+      "set": "practice"
+    },
+    {
+      "context": {
+        "case": "case-be851c0ba2f9c560a3d0f25f46595765bf2ca615145b7e0e194ac46f087209b5",
+        "domain": "linear-system",
+        "task": "submit-certificate"
+      },
+      "evidence": "Public synthetic fixture for case-be851c0ba2f9c560a3d0f25f46595765bf2ca615145b7e0e194ac46f087209b5. Submission requires the independently executed certificate check; reading a note does not.",
+      "expected": [
+        "exact-substitution"
+      ],
+      "id": "exam-submit",
+      "set": "exam"
+    },
+    {
+      "context": {
+        "case": "case-be851c0ba2f9c560a3d0f25f46595765bf2ca615145b7e0e194ac46f087209b5",
+        "domain": "linear-system",
+        "task": "read-note"
+      },
+      "evidence": "Public synthetic fixture for case-be851c0ba2f9c560a3d0f25f46595765bf2ca615145b7e0e194ac46f087209b5. Read-only teaching-note control; no certificate is being submitted.",
+      "expected": [],
+      "id": "exam-read",
+      "set": "exam"
+    }
+  ],
+  "public_synthetic": true
+}
