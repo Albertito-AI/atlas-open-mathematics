@@ -55,11 +55,23 @@
       "id": "Q0005",
       "priority": 4,
       "stage": "known-mathematics-prerequisite",
-      "status": "open",
+      "status": "classification-and-audit-proposed",
       "title": "Integer feasibility at the singular boundary",
       "statement": "Classify integer solutions of a two-by-two integer system with determinant zero, treating a zero row and the zero matrix explicitly.",
       "prior_work": "research/agent-attempts/0003/record.md",
-      "next_step": "Freeze rank-zero and rank-one cases; derive consistency and gcd conditions and verify constructive certificates.",
+      "next_step": "Independent integration review of classification, family completeness and finite audit; no formal implementation proof claimed.",
+      "novelty": "Known mathematics; no novelty claim",
+      "evidence": "research/agent-attempts/0005/record.md"
+    },
+    {
+      "id": "Q0006",
+      "priority": 4,
+      "stage": "known-mathematics-application-audit",
+      "status": "open",
+      "title": "Optimal whole-batch plans along an integer family",
+      "statement": "For rank-one two-variable integer systems with integer box bounds and a linear objective, derive endpoint optimality and check feasibility, optimality and unboundedness certificates, including zero-cost directions.",
+      "prior_work": "research/agent-attempts/0005/record.md",
+      "next_step": "Audit and reuse the existing applications/challenge lab; freeze bounded and unbounded cases before attempting the result.",
       "novelty": "Known mathematics; no novelty claim"
     }
   ]

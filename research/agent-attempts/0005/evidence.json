@@ -1,0 +1,33 @@
+{
+  "bounds": {
+    "coefficients_rhs": [
+      -3,
+      3
+    ],
+    "oracle_coordinates": [
+      -12,
+      12
+    ]
+  },
+  "counts": {
+    "enumerated_points_in_family": 23808,
+    "integer_feasible": 1377,
+    "matrices": 289,
+    "nonnegative_feasible": 1025,
+    "rank_one_integer_family": 1376,
+    "rational_inconsistency": 12528,
+    "rational_inconsistent": 12528,
+    "rational_underdetermined": 1633,
+    "row_gcd_obstruction": 256,
+    "systems": 14161,
+    "zero_system": 1
+  },
+  "ordered_results_sha256": "de6373efb569d7adc0a78eabd9683188b7cf274617170f3f19d6de44ff1a4073",
+  "question": "Q0005",
+  "scope": "Finite audit; mathematical completeness argument is separate; no novelty or learner outcomes",
+  "source_sha256": {
+    "atlas_math/applications.py": "10a50dce8da116183983804b149c070fae63b728d6332b47076f842f63312825",
+    "atlas_math/engine.py": "2bcaea6a94d35426910e4b3dbca665a9bb8d541d3286fc39e9b1e2e309a70c60",
+    "research/agent-attempts/0005/audit.py": "05aeb06d54c6ae0b3694bdf18a94ddee960453b10ee289a12832e8a972390d23"
+  }
+}
