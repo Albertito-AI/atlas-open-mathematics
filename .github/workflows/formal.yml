@@ -31,10 +31,16 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          curl -fsSL --retry 2 --connect-timeout 20 --max-time 240 \
-            -H 'Accept: application/octet-stream' \
+          if ! curl -fsSL --retry 2 --retry-max-time 240 --connect-timeout 20 --max-time 240 \
             -o "$RUNNER_TEMP/lean.tar.zst" \
-            https://api.github.com/repos/leanprover/lean4/releases/assets/303975747
+            https://github.com/leanprover/lean4/releases/download/v4.24.0/lean-4.24.0-linux.tar.zst; then
+            echo 'Official release download failed; trying the same pinned asset through the GitHub API.'
+            rm -f "$RUNNER_TEMP/lean.tar.zst"
+            curl -fsSL --retry 2 --retry-max-time 240 --connect-timeout 20 --max-time 240 \
+              -H 'Accept: application/octet-stream' \
+              -o "$RUNNER_TEMP/lean.tar.zst" \
+              https://api.github.com/repos/leanprover/lean4/releases/assets/303975747
+          fi
           echo 'b14f5e5159219dd1a1956c3b806813319f5e94ccd5bdfd56f54520609a5bb5ec  '"$RUNNER_TEMP/lean.tar.zst" | sha256sum --check
           mkdir "$RUNNER_TEMP/atlas-lean"
           tar --zstd -xf "$RUNNER_TEMP/lean.tar.zst" --strip-components=1 -C "$RUNNER_TEMP/atlas-lean"
