@@ -78,7 +78,7 @@ interchanging this limit with the integral would be invalid.
 
 ## Failed routes and limitations
 
-The rejected energy-only pointwise-gradient bound fails by explicit formula,
+The rejected energy-only bound on the gradient L2 norm at each time fails by explicit formula,
 not because a finite search missed a proof. Another rejected route mistakes a
 uniform time-integrated dissipation bound for a uniform bound at every time.
 The example disproves that implication. A third route treats m as the time
@@ -149,3 +149,6 @@ agent review, not external human peer review or machine-checked formal proof.
 The 96 existing repository tests passed; the repository validator checked 131
 JSON files and local links. Those software checks do not verify this analytic
 argument. No numerical or formal verification is asserted.
+
+Review clarification: wording now explicitly names the gradient L2 norm at each
+time, avoiding confusion with a spatial pointwise gradient bound.
