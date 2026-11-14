@@ -34,11 +34,12 @@
       "stage": "literature-map",
       "priority": 3,
       "statement": "Keep Clay status and the original mathematical claim distinct while mapping inspectable prerequisite lemmas.",
-      "next_step": "Identify and audit the exact announced proof independently; supporting next exercise: fixed L2 energy versus unbounded gradient norms. Periodic-pressure energy argument recorded in attempt0006; no global regularity claim.",
+      "next_step": "Announced-proof identification/audit remains open. Supporting next exercise: finite sums of shear Fourier modes, orthogonality and positive-time gradient bound; state convergence gates before infinite series.",
       "acceptance": "Source URLs, dates and exact claims; no resolution declared from a news item alone.",
       "novelty": "literature synthesis only",
       "status": "partial-source-and-prerequisite-audit",
-      "evidence": "research/agent-attempts/0006/record.md"
+      "evidence": "research/agent-attempts/0006/record.md",
+      "supporting_evidence": "research/agent-attempts/0007/record.md"
     },
     {
       "id": "Q0004",
@@ -57,11 +58,11 @@
       "id": "Q0005",
       "priority": 4,
       "stage": "known-mathematics-prerequisite",
-      "status": "classification-and-audit-proposed",
+      "status": "classification-and-audit-integrated",
       "title": "Integer feasibility at the singular boundary",
       "statement": "Classify integer solutions of a two-by-two integer system with determinant zero, treating a zero row and the zero matrix explicitly.",
       "prior_work": "research/agent-attempts/0003/record.md",
-      "next_step": "Independent integration review of classification, family completeness and finite audit; no formal implementation proof claimed.",
+      "next_step": "Integrated under Maintenance50 review on14November; continue Q0006 without claiming a formal implementation proof.",
       "novelty": "Known mathematics; no novelty claim",
       "evidence": "research/agent-attempts/0005/record.md"
     },
