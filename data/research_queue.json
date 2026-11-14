@@ -34,9 +34,11 @@
       "stage": "literature-map",
       "priority": 3,
       "statement": "Keep Clay status and the original mathematical claim distinct while mapping inspectable prerequisite lemmas.",
-      "next_step": "Read current official updates, identify the exact claimed theorem and primary sources, record what has and has not been independently checked.",
+      "next_step": "Identify and audit the exact announced proof independently; supporting next exercise: fixed L2 energy versus unbounded gradient norms. Periodic-pressure energy argument recorded in attempt0006; no global regularity claim.",
       "acceptance": "Source URLs, dates and exact claims; no resolution declared from a news item alone.",
-      "novelty": "literature synthesis only"
+      "novelty": "literature synthesis only",
+      "status": "partial-source-and-prerequisite-audit",
+      "evidence": "research/agent-attempts/0006/record.md"
     },
     {
       "id": "Q0004",
