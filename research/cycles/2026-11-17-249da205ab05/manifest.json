@@ -1,0 +1,28 @@
+{
+  "activity": "generated public practice; known mathematics",
+  "date_singapore": "2026-11-17",
+  "files": {
+    "mathematics/attempts.jsonl": "6d4b310b640c39ad534bf8b0b17e77b978fa65ea7e9ffcee869838cf993f88e1",
+    "mathematics/lesson.md": "e04eb37f6abb90352c160865943c36da878e9057a8537ae146a7045e6e0d212e",
+    "mathematics/records/attempt-0521215b81bdb6256e1421bf5315177ffdfeca9d512107f96759931642f131bc.json": "a93d88e54c9ba61376586f4ba2304d7c5c195cb51a59dcf0eb37e22951809e64",
+    "mathematics/records/attempt-1e4922ad501a9b1d4e8a205836df627139c550f0e87a838c2e2fafb0c48c85a1.json": "a736e118f67ec485eac07caa3b89b9e2b43f9ca831160e53834c778f6dcff0d4",
+    "mathematics/records/attempt-32ebec9448868ec35c6f14f26259e6dde992877471b7060628fa1ced00531abc.json": "91bba8c5d9ff3745d916acb6a8dfa294b9a26bf4a16e5b926ba52e2cb29608c2",
+    "mathematics/records/attempt-337175240dd84e756ff8f2a1f6f037001fccee90ee8f225e235a1a52031db9b2.json": "d5f7924e9b79be357f98186a67fe764beb8ef5d67a4a610639a5e40ceffc59c4",
+    "mathematics/records/attempt-383ad0ff5577887a654a5444c2d9708c732cf522c875a3025ff63184bb75c6f5.json": "c972461a89ec2e96c3676be31e05ba9cb4a112e0cf1e1b90a8dfd921d3a854ee",
+    "mathematics/records/attempt-453ceb4cb15e05bee7be9d0c35ada7886806b09a59402e125b550350adbb6e70.json": "7cf9269fec37c5f65fc7c15cee801fd5dd89b55db381c193413b6c789eb13e5b",
+    "mathematics/records/attempt-5de375713e0f368d6d5e3e163e8da54758b799d9370d0c2c9dd2b3cc5a675876.json": "20eb5599a8a314ac8931d7bbe2db0fe497c28be68fddcc3816a5607e5a849226",
+    "mathematics/records/attempt-6d12ae54d7dc60f14dc8d17f33a770b0da652cd4591c24efffb855bc733abb83.json": "ab3fb4d978aa2c5079df96e43654a994892ea1087b10f8ebe2ea18d299f5cb87",
+    "mathematics/records/attempt-821658f3a1e80d430b395acc385173adffe4b0a592fb7203f225fcc36aa50288.json": "e893a40934663e18584370bee6b33b7c714336bf0c9d15eca1360491b360751e",
+    "mathematics/records/attempt-b13c31f954d98f8fb98bdbb34583891609ad0ec58ceeaa3d6a10e1d0e9739844.json": "6da6ea41af7694bc2c0063487795080074c5b1977b20c18109e74d5fbdeaef86",
+    "mathematics/records/attempt-d1536f5f2cefbe52b270b9db888477f943611db6532531a8d4fc3916b2b52db7.json": "415e75dedd7d9e7afdee2b4bdfa9d3330eee95b5b31532ea14a05d9fe997b887",
+    "mathematics/records/attempt-e154fffa6436e5571bbb65349be7aa818c266ae683bb92d85105b3177fc5c3b2.json": "2ada83f098017facf956acbdd46f9b5bcd42efb9bf363c7e2416122c1d5d36d7",
+    "mathematics/report.json": "13b326e137d3ff0706e22d4f7dd24df59a427c7b77befe44ee0d44326205b309",
+    "opsbook/MANUAL.md": "a68d280d6d82e9914df2bdfcb70dd3690395dcab9c34f786db9ba231a15a25c2",
+    "opsbook/fixtures.json": "0da5a6b9e3e1e932e282f8de7842d3b5519669e431b51765683d5bde4a3e6cd0",
+    "opsbook/report.json": "710d4b4cc96aa0f6e5703df8dfbf3102eabe3091087eb707130815b16f960f88"
+  },
+  "live_model": false,
+  "new_mathematical_discovery": false,
+  "schema_version": 1,
+  "source_fingerprint_sha256": "249da205ab0513b45b7ee82719c225649bc2be92b5e0a32bf0aed4eaec15b239"
+}
