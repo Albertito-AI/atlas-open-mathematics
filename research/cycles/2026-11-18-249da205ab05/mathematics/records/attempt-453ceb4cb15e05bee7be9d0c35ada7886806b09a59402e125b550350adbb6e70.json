@@ -1,0 +1,42 @@
+{
+  "candidate": {
+    "certificate": {
+      "determinant": "0"
+    },
+    "solution": [
+      "8",
+      "95/3"
+    ],
+    "status": "unique"
+  },
+  "case": {
+    "A": [
+      [
+        4,
+        1
+      ],
+      [
+        -12,
+        -3
+      ]
+    ],
+    "b": [
+      32,
+      -95
+    ],
+    "id": "case-8154978effa97971db9aae41d3de312d62af309637aed9ae90d3dead093c6b6f",
+    "kind": "inconsistent"
+  },
+  "epistemic_status": "candidate_rejected",
+  "id": "attempt-453ceb4cb15e05bee7be9d0c35ada7886806b09a59402e125b550350adbb6e70",
+  "live_model": false,
+  "method": "frozen_diagonal_baseline",
+  "novelty": "known_mathematics",
+  "phase": "public_transfer_practice",
+  "schema_version": 1,
+  "synthetic": true,
+  "verification": {
+    "accepted": false,
+    "reason": "exact substitution fails at least one original equation"
+  }
+}
