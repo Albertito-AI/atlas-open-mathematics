@@ -1,0 +1,42 @@
+{
+  "candidate": {
+    "certificate": {
+      "determinant": "0"
+    },
+    "solution": [
+      "20",
+      "-20/3"
+    ],
+    "status": "unique"
+  },
+  "case": {
+    "A": [
+      [
+        -1,
+        3
+      ],
+      [
+        7,
+        -21
+      ]
+    ],
+    "b": [
+      -20,
+      140
+    ],
+    "id": "case-c096f2a27dddea3eb101825c44c2d92839439ca721c7b88071d6f59798ff45b5",
+    "kind": "underdetermined"
+  },
+  "epistemic_status": "candidate_rejected",
+  "id": "attempt-ce24bf68831a2836f0ca5ec8fc8159ebd0789d06b3432f9d3d53c816282ccfea",
+  "live_model": false,
+  "method": "frozen_diagonal_baseline",
+  "novelty": "known_mathematics",
+  "phase": "public_practice",
+  "schema_version": 1,
+  "synthetic": true,
+  "verification": {
+    "accepted": false,
+    "reason": "exact substitution fails at least one original equation"
+  }
+}
