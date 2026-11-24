@@ -1,0 +1,42 @@
+{
+  "candidate": {
+    "certificate": {
+      "determinant": "41"
+    },
+    "solution": [
+      "-8",
+      "-1"
+    ],
+    "status": "unique"
+  },
+  "case": {
+    "A": [
+      [
+        1,
+        9
+      ],
+      [
+        -5,
+        -4
+      ]
+    ],
+    "b": [
+      -17,
+      44
+    ],
+    "id": "case-073f5696f147ac38ce80bb077ca099579dd95c11655bdd64b1939cc28dd8c424",
+    "kind": "unique"
+  },
+  "epistemic_status": "exact_certificate_verified",
+  "id": "attempt-5b52307b3ce91ed4956645b7a7a9cc4be9536e113561d1718ca12b2c0dbe7fae",
+  "live_model": false,
+  "method": "predetermined_exact_solver",
+  "novelty": "known_mathematics",
+  "phase": "public_transfer_practice",
+  "schema_version": 1,
+  "synthetic": true,
+  "verification": {
+    "accepted": true,
+    "reason": "exact substitution and nonzero determinant prove a unique solution"
+  }
+}
