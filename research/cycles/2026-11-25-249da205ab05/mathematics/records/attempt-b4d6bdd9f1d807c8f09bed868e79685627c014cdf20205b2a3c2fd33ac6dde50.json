@@ -1,0 +1,41 @@
+{
+  "candidate": {
+    "certificate": {
+      "row_weights": [
+        "12",
+        "6"
+      ]
+    },
+    "status": "inconsistent"
+  },
+  "case": {
+    "A": [
+      [
+        6,
+        9
+      ],
+      [
+        -12,
+        -18
+      ]
+    ],
+    "b": [
+      -36,
+      73
+    ],
+    "id": "case-9d1fbe5d2029696f053febb683c3515c69e14852a0831cd0990ef75430d986f0",
+    "kind": "inconsistent"
+  },
+  "epistemic_status": "exact_certificate_verified",
+  "id": "attempt-b4d6bdd9f1d807c8f09bed868e79685627c014cdf20205b2a3c2fd33ac6dde50",
+  "live_model": false,
+  "method": "predetermined_exact_solver",
+  "novelty": "known_mathematics",
+  "phase": "public_practice",
+  "schema_version": 1,
+  "synthetic": true,
+  "verification": {
+    "accepted": true,
+    "reason": "exact row combination proves inconsistency"
+  }
+}
