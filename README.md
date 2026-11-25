@@ -137,3 +137,7 @@ Public material remains available under its stated licences. Access to additiona
 Original code is distributed under the [MIT licence](LICENSE). Original educational content is distributed under [CC BY 4.0](LICENSE-CONTENT.md), except where a file states otherwise. Preserve third-party attribution and licence notices. Journal articles retain their separately agreed licences.
 
 Albert Tan directs the project. Contributors remain responsible for their claims and must disclose material AI assistance. Mathematical review and journal decisions require appropriately qualified, independent people. No result in this repository is presented as an accepted solution to a Millennium Prize Problem.
+
+## Sport governance teaching application
+
+Reproduce the feasibility calculation under both weather scenarios. Derive the £101 change that eliminates the last affordable plan. [Exercise and records](https://github.com/Albertito-AI/sport-governance-and-administration/blob/main/lab/README.md) · [Albert Tan’s book and teaching companion](https://alberttansinhon.com/sport-governance/).
