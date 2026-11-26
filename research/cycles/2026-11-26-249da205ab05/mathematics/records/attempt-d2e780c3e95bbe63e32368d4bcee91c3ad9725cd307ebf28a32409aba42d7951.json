@@ -1,0 +1,42 @@
+{
+  "candidate": {
+    "certificate": {
+      "determinant": "0"
+    },
+    "solution": [
+      "49/4",
+      "14"
+    ],
+    "status": "unique"
+  },
+  "case": {
+    "A": [
+      [
+        -8,
+        -7
+      ],
+      [
+        -8,
+        -7
+      ]
+    ],
+    "b": [
+      -98,
+      -98
+    ],
+    "id": "case-b84db600c554430b5b1c018ba37999166ee7e7dc5e9ec4974085194c3166bda9",
+    "kind": "underdetermined"
+  },
+  "epistemic_status": "candidate_rejected",
+  "id": "attempt-d2e780c3e95bbe63e32368d4bcee91c3ad9725cd307ebf28a32409aba42d7951",
+  "live_model": false,
+  "method": "frozen_diagonal_baseline",
+  "novelty": "known_mathematics",
+  "phase": "public_practice",
+  "schema_version": 1,
+  "synthetic": true,
+  "verification": {
+    "accepted": false,
+    "reason": "exact substitution fails at least one original equation"
+  }
+}
