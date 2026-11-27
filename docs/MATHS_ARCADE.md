@@ -8,6 +8,8 @@ Two players can clear the same board and disagree about whether either solution 
 
 Three browser games make these distinctions playable. Lattice Dash measures distance in a graph. Target Forge asks which numbers a set of tiles can express. Parity Lights asks how few switches must change. The three examples below are fixed puzzles. Open the links to challenge a friend on the same starting position, or use the checks at the end to reproduce the answers. [Play the Maths Arcade](https://alberttansinhon.com/math-arcade/)
 
+Running these puzzles with a group? The companion guide gives each pair a one-page challenge sheet and the facilitator a separate answer and assessment key. [Print the 20-minute maths-circle guide](MATHS_ARCADE_CLUB_GUIDE.md)
+
 ## Lattice Dash and the three-jump lower bound
 
 Each unblocked point is a vertex. Draw an edge whenever one of the four displayed jumps lands on another unblocked point inside the grid. A jump can pass over a blocked point. Each edge costs one move. The game searches outward in layers from the start. Layer zero contains the start, layer one contains its new neighbours, and induction places every reachable point in the layer numbered by its shortest distance. The first layer containing the goal gives the displayed par. [Implementation](https://alberttansinhon.com/math-arcade/lattice.mjs) · [Breadth-first paths, Sedgewick and Wayne, §4.1](https://algs4.cs.princeton.edu/41graph/BreadthFirstPaths.java.html)
