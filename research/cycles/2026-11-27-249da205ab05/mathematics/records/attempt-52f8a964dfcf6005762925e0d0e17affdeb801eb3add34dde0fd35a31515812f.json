@@ -1,0 +1,45 @@
+{
+  "candidate": {
+    "certificate": {
+      "null_vector": [
+        "-9",
+        "-3"
+      ]
+    },
+    "solution": [
+      "-16",
+      "0"
+    ],
+    "status": "underdetermined"
+  },
+  "case": {
+    "A": [
+      [
+        -3,
+        9
+      ],
+      [
+        12,
+        -36
+      ]
+    ],
+    "b": [
+      48,
+      -192
+    ],
+    "id": "case-99a83968af984742ea7c71ffb5939e24e99ca2bb8b8ca4acdce1229df18c5d62",
+    "kind": "underdetermined"
+  },
+  "epistemic_status": "exact_certificate_verified",
+  "id": "attempt-52f8a964dfcf6005762925e0d0e17affdeb801eb3add34dde0fd35a31515812f",
+  "live_model": false,
+  "method": "predetermined_exact_solver",
+  "novelty": "known_mathematics",
+  "phase": "public_transfer_practice",
+  "schema_version": 1,
+  "synthetic": true,
+  "verification": {
+    "accepted": true,
+    "reason": "exact particular solution and nonzero null vector prove nonuniqueness"
+  }
+}
