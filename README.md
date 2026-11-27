@@ -8,9 +8,9 @@ The Millennium Prize Problems give the programme long-term research directions. 
 
 ## Play the Maths Arcade
 
-Can you prove that your shortest route really is the shortest? Play a round of Lattice Dash, build an exact expression in Target Forge, or clear the grid in Parity Lights. Send a friend the same puzzle and compare your reasoning. The companion white paper includes three replayable challenges and shows how to check each answer.
+Can you prove that your shortest route really is the shortest? Play a round of Lattice Dash, build an exact expression in Target Forge, or clear the grid in Parity Lights. Send a friend the same puzzle and compare your reasoning. The technical paper gives three replayable challenges. Maths circles can use the two-page club guide to run a 20-minute session.
 
-[Play the Maths Arcade](https://alberttansinhon.com/math-arcade/) · [Read the technical white paper](docs/MATHS_ARCADE.md) · [Propose a puzzle variant](https://github.com/Albertito-AI/atlas-open-mathematics/issues/new?template=problem.yml)
+[Play the Maths Arcade](https://alberttansinhon.com/math-arcade/) · [Read the technical white paper](docs/MATHS_ARCADE.md) · [Print the maths-circle guide](docs/MATHS_ARCADE_CLUB_GUIDE.md) · [Propose a puzzle variant](https://github.com/Albertito-AI/atlas-open-mathematics/issues/new?template=problem.yml)
 
 ## Mathematics at work, then harder questions
 
