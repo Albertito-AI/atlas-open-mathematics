@@ -8,11 +8,16 @@ The Millennium Prize Problems give the programme long-term research directions. 
 
 ## Play the Maths Arcade
 
-Can you prove that your shortest route really is the shortest? Find a route in Lattice Dash, build an exact expression in Target Forge, clear the grid in Parity Lights, or fill a [Sudoku board](https://alberttansinhon.com/math-arcade/#play/sudoku). Send a friend the same puzzle and compare your reasoning. The technical paper gives three replayable challenges. For a club warm-up, ask a partner to explain why a Sudoku digit belongs in a particular cell. The two-page club guide gives a 20-minute session on the other three games.
+Find a shortest route in Lattice Dash, build an exact expression in Target Forge or clear the board in Parity Lights. In Sudoku, explain why a digit is forced before you enter it. Nim Lab lets you test which heap to reduce, and Reversi Endgame Lab asks which legal move gives the best final score against perfect play. Fixed challenge links let two players compare their reasoning on the same opening. [Play the Maths Arcade](https://alberttansinhon.com/math-arcade/) · [Explore the games, white papers and source code](research/arcade/README.md)
 
-[Play the Maths Arcade](https://alberttansinhon.com/math-arcade/) · [Read the technical white paper](docs/MATHS_ARCADE.md) · [Print the maths-circle guide](docs/MATHS_ARCADE_CLUB_GUIDE.md) · [Propose a puzzle variant](https://github.com/Albertito-AI/atlas-open-mathematics/issues/new?template=problem.yml)
+| Investigate a question | Read the mathematics |
+| --- | --- |
+| How do we know a solution is shortest? | [Lattice Dash, Target Forge and Parity Lights](docs/MATHS_ARCADE.md) |
+| What makes a Sudoku uniquely solvable? | [Forced digits, puzzle generation and repeat protection](docs/SUDOKU_WHITE_PAPER.md) |
+| Which move can force a win? | [Nim and binary arithmetic](docs/NIM_RESEARCH.md) · [Reversi and exact endgame search](docs/REVERSI_RESEARCH.md) |
+| When does a bonus reward the higher-emissions proposal? | [Boardroom Bonus, incentive design and measurement](docs/BOARDROOM_WHITE_PAPER.md) |
 
-**Boardroom challenge.** A manager can earn a bonus while total emissions rise. Take the manager’s and board’s seats, then write a rule that survives both proposals. [Play the case](https://alberttansinhon.com/math-arcade/boardroom/) · [Join the four-week club pilot](https://alberttansinhon.com/math-arcade/club-pilot/) · [Inspect the worked case and pilot measures](docs/BOARDROOM_PILOT.md)
+For a group session, play the emissions case or print the two-page maths-circle guide. [Play Boardroom Bonus](https://alberttansinhon.com/math-arcade/boardroom/) · [Print the maths-circle guide](docs/MATHS_ARCADE_CLUB_GUIDE.md) · [Join the club pilot](https://alberttansinhon.com/math-arcade/club-pilot/) · [Propose a puzzle variant](https://github.com/Albertito-AI/atlas-open-mathematics/issues/new?template=problem.yml)
 
 ## Mathematics at work, then harder questions
 
