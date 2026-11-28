@@ -34,12 +34,12 @@
       "stage": "literature-map",
       "priority": 3,
       "statement": "Keep Clay status and the original mathematical claim distinct while mapping inspectable prerequisite lemmas.",
-      "next_step": "Announced-proof identification/audit remains open. Supporting next exercise: finite sums of shear Fourier modes, orthogonality and positive-time gradient bound; state convergence gates before infinite series.",
+      "next_step": "Announced-proof identification/audit remains open. Finite shear Fourier sums and orthogonality are recorded in attempt 0008. Next mathematical gate: square-summable infinite shear series, L2 initial trace and positive-time derivative convergence; no infinite-series result yet.",
       "acceptance": "Source URLs, dates and exact claims; no resolution declared from a news item alone.",
       "novelty": "literature synthesis only",
       "status": "partial-source-and-prerequisite-audit",
       "evidence": "research/agent-attempts/0006/record.md",
-      "supporting_evidence": "research/agent-attempts/0007/record.md"
+      "supporting_evidence": "research/agent-attempts/0008/record.md"
     },
     {
       "id": "Q0004",
