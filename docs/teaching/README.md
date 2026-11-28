@@ -13,8 +13,10 @@ The guide contains 20 replayable positions across the six games. Each player she
 
 ## Citation and editions
 
-Suggested citation: Atlas Open Mathematics. (2026). *Teaching mathematical thinking through play: Six games from Albert Tan Sin Hon’s Maths Arcade* and *Maths Arcade: Six player sheets*. Project directed by Albert Tan Sin Hon. Use the commit permalink for the edition consulted. [Project website](https://alberttansinhon.com/) · [GitHub profile](https://github.com/Albertito-AI)
+Tan, Albert Sin Hon. (2026). *Teaching mathematical thinking through play: Teaching guide and player sheets for the Maths Arcade* (Version 1.0). Zenodo. [https://doi.org/10.5281/zenodo.24617751](https://doi.org/10.5281/zenodo.24617751).
 
-The wider software project has a separate [Zenodo project archive](https://doi.org/10.5281/zenodo.24189520). The two teaching resources are identified here by their GitHub edition.
+The archived edition contains the teaching guide, the six spoiler-free player sheets and an offline copy of the six-game arcade. The edition DOI covers all three files. [All versions on Zenodo](https://doi.org/10.5281/zenodo.24617750) · [Author’s ORCID](https://orcid.org/0009-0001-8996-7933) · [Browse the teaching resources on GitHub Pages](https://albertito-ai.github.io/Albertito-AI/math-arcade/teaching/) · [Search the public library](https://albertito-ai.github.io/Albertito-AI/public-library/)
+
+The wider Atlas Open Mathematics software project has its own [Zenodo project archive](https://doi.org/10.5281/zenodo.24189520). The [November 2026 GitHub teaching edition](https://github.com/Albertito-AI/atlas-open-mathematics/tree/04585a6ee4c08d81063e77e1f17e6351c7fdfd34/docs/teaching) preserves the Markdown and PDF sources. [Project website](https://alberttansinhon.com/) · [GitHub profile](https://github.com/Albertito-AI)
 
 Original educational text and diagrams are available under [Creative Commons Attribution 4.0](../../LICENSE-CONTENT.md). Credit Albert Tan Sin Hon and the named contributors, link to the source version and identify any adaptations.
