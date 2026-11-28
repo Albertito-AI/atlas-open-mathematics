@@ -64,3 +64,7 @@ node --test research/arcade/reversi.test.mjs
 ```
 
 All six test groups passed. For seeds 0 through 127 in each tier, all 384 recorded starting positions replayed from the standard opening, and each tier contained 128 distinct boards with side to move. The checker compared the exact score of every initial alternative for seeds 0 through 15 in all three tiers, covering 48 positions. Additional fixtures cover all eight flip directions, compulsory passes, early termination, a draw and the two examples above. These counts describe the tested inputs. The work records software verification and mathematical examples. Learner outcomes and expert playing strength have yet to be measured. This is a project technical paper with no external peer-review claim.
+
+## Teach these positions
+
+Try the two Reversi Endgame Lab positions with a partner, then compare the arguments in the facilitator’s guide. [Player sheet](teaching/PLAYER_SHEETS.md#reversi-endgame-lab) · [Teaching chapter](teaching/TEACHING_GUIDE.md#reversi-endgame-lab) · [Public teaching hub](https://alberttansinhon.com/math-arcade/teaching/)

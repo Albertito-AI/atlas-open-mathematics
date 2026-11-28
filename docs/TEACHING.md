@@ -1,5 +1,7 @@
 # Teaching and knowledge transfer
 
+For a classroom example of worked reasoning and transfer, use the [six-game Maths Arcade teaching pack](teaching/README.md). [Teaching resources on Albert’s website](https://alberttansinhon.com/math-arcade/teaching/)
+
 The project's educational aim is that another person can understand a method, assess its limitations and use it on an unfamiliar problem. Publishing more text does not by itself demonstrate that this has happened.
 
 ## A teaching companion

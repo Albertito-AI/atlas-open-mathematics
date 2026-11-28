@@ -62,3 +62,7 @@ From the repository root, run `python3 tools/verify_arcade_whitepapers.py` using
 **Suggested citation.** Atlas Open Mathematics (2026). *How does the Maths Arcade make a Sudoku with exactly one solution?* Version 1.0, 28 November. Project directed by Albert Tan Sin Hon. Cite the GitHub commit permalink for the edition consulted.
 
 OpenAI Codex assisted with drafting and mathematical checks. This project technical paper documents an application of established Sudoku methods. The repository's [educational content licence](../LICENSE-CONTENT.md) covers the original exposition. [Report a correction](https://github.com/Albertito-AI/atlas-open-mathematics/issues/new?template=correction.yml)
+
+## Teach these positions
+
+Try the two Sudoku positions with a partner, then compare the arguments in the facilitator’s guide. [Player sheet](teaching/PLAYER_SHEETS.md#sudoku) · [Teaching chapter](teaching/TEACHING_GUIDE.md#sudoku) · [Public teaching hub](https://alberttansinhon.com/math-arcade/teaching/)

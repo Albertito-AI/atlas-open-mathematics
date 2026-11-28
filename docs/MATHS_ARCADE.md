@@ -101,3 +101,7 @@ Yes. Each corner now also flips B2. The centre is flipped twice and returns to i
 Have a variant whose answer changes, or a shorter proof for one of the featured boards? Share the game, level, seed, changed rule and enough moves or reasoning for someone else to check. [Propose a mathematical question](https://github.com/Albertito-AI/atlas-open-mathematics/issues/new?template=problem.yml) · [Suggest a teaching improvement](https://github.com/Albertito-AI/atlas-open-mathematics/issues/new?template=teaching.yml)
 
 **Publication and credit.** Atlas Open Mathematics project white paper, version 1, issued as a public technical working note. Its mathematical content is an exposition of established methods. Verification consists of the specified finite checks and worked derivations. Codex (OpenAI, GPT-6) assisted with the software, drafting and execution of the checks. Original educational prose is available under the project's content licence. [CC BY 4.0 and attribution](../LICENSE-CONTENT.md)
+
+## Teach these positions
+
+Start with the paired [Lattice Dash](teaching/PLAYER_SHEETS.md#lattice-dash), [Target Forge](teaching/PLAYER_SHEETS.md#target-forge) or [Parity Lights](teaching/PLAYER_SHEETS.md#parity-lights) positions, then compare the [worked solutions and assessments](teaching/TEACHING_GUIDE.md). · [Public teaching hub](https://alberttansinhon.com/math-arcade/teaching/)

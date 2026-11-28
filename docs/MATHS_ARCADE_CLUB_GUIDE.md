@@ -4,6 +4,8 @@
 
 [Download the two-page print edition](MATHS_ARCADE_CLUB_GUIDE.pdf) · [Read the puzzle field notes](https://alberttansinhon.com/math-arcade/field-notes/) · [Play the daily challenge](https://alberttansinhon.com/math-arcade/#daily)
 
+For the six-game sequence, choose the [teaching guide and one-page player sheets](teaching/README.md). The new pack includes Sudoku, Nim Lab and Reversi Endgame Lab alongside the three games in this circle. [Public teaching hub](https://alberttansinhon.com/math-arcade/teaching/)
+
 **For the facilitator.** Give each pair page 1 of the print edition and keep page 2 as your key. The sheet includes the entire starting position for each activity. A device per pair is optional. Participants should be familiar with ordered pairs and simple fractions. Ask one partner to propose a solution and the other to check it. Swap roles for each new game.
 
 ## Pair sheet

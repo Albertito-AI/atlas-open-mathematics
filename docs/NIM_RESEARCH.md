@@ -36,3 +36,7 @@ The independent check defines a position as winning if **any** legal move gives 
 ## Primary reference
 
 Charles L. Bouton. “Nim, A Game with a Complete Mathematical Theory.” *Annals of Mathematics*, second series, vol. 3, 1901–1902, pp. 35–39. [DOI 10.2307/1967631](https://doi.org/10.2307/1967631) · [Scanned article](https://sites.ualberta.ca/~hayward/cgt/asn/bouton1901.pdf)
+
+## Teach these positions
+
+Try the two Nim Lab positions with a partner, then compare the arguments in the facilitator’s guide. [Player sheet](teaching/PLAYER_SHEETS.md#nim-lab) · [Teaching chapter](teaching/TEACHING_GUIDE.md#nim-lab) · [Public teaching hub](https://alberttansinhon.com/math-arcade/teaching/)
