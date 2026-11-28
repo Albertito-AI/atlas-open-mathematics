@@ -68,3 +68,7 @@ All six test groups passed. For seeds 0 through 127 in each tier, all 384 record
 ## Teach these positions
 
 Try the two Reversi Endgame Lab positions with a partner, then compare the arguments in the facilitator’s guide. [Player sheet](teaching/PLAYER_SHEETS.md#reversi-endgame-lab) · [Teaching chapter](teaching/TEACHING_GUIDE.md#reversi-endgame-lab) · [Public teaching hub](https://alberttansinhon.com/math-arcade/teaching/)
+
+## Full-board play
+
+The separate [full Reversi match](https://alberttansinhon.com/math-arcade/#match/reversi) starts with the four central discs. Its opening and middlegame search is bounded. The [opponent-mode implementation note](ARCADE_OPPONENT_MODES.md) explains when its Hard rival switches to exact terminal evaluation. [Play on GitHub Pages](https://albertito-ai.github.io/Albertito-AI/math-arcade/#match/reversi)
