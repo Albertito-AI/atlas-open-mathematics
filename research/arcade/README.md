@@ -6,7 +6,7 @@ Start with a position you can play, make a prediction and follow the calculation
 
 To use these positions with a class, open the [teaching guide and six player sheets](../../docs/teaching/README.md). Each resource is available as searchable text and a print PDF. [Teaching hub](https://alberttansinhon.com/math-arcade/teaching/) · [Research papers on GitHub Pages](https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/)
 
-For longer written arguments, the [Olympiad proof edition](../olympiad/README.md) pairs staged hints with complete solutions, transfer problems and reproducible checks.
+For longer written arguments, the [Olympiad proof edition](../olympiad/README.md) pairs staged hints with complete solutions, transfer problems and reproducible checks. The separate [Odd Parcel decision-tree lab](../olympiad/labs/odd-parcel.md) proves the exact cost of locating one heavier parcel with an equal-pan balance. [Independent playable copy](https://albertito-ai.github.io/Albertito-AI/math-arcade/olympiad/odd-parcel/)
 
 | Game and worked position | Question | Paper |
 | --- | --- | --- |

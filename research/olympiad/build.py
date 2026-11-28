@@ -71,8 +71,13 @@ def print_sheet(edition: dict) -> bytes:
 
 
 def archive(edition: dict, destination: Path):
-    files = {f"research/olympiad/{f.relative_to(HERE).as_posix()}": f.read_bytes() for f in sorted(HERE.rglob('*'))
+    # The published edition contains four proof problems. Later independent labs have their own sources.
+    roots = [HERE / name for name in ('README.md', 'compile-edition.mjs', 'edition.json', 'problems', 'source')]
+    members = [f for root in roots for f in (sorted(root.rglob('*')) if root.is_dir() else [root])]
+    files = {f"research/olympiad/{f.relative_to(HERE).as_posix()}": f.read_bytes() for f in members
              if f.is_file() and '__pycache__' not in f.parts and f.suffix in {'.md', '.py', '.mjs', '.json', '.svg'}}
+    # The archive also ships the exact standalone packager readers received with version 1.0.0.
+    files['research/olympiad/build.py'] = (HERE / 'releases' / 'v1.0.0' / 'build.py').read_bytes()
     for name in ['LICENSE', 'LICENSE-CONTENT.md']:
         files[name] = (ROOT / name).read_bytes()
     files['research/olympiad/Problem_Sheets.html'] = print_sheet(edition)
