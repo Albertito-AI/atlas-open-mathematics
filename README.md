@@ -10,6 +10,8 @@ The Millennium Prize Problems give the programme long-term research directions. 
 
 Find a shortest route in Lattice Dash, build an exact expression in Target Forge or clear the board in Parity Lights. In Sudoku, explain why a digit is forced before you enter it. Nim Lab lets you test which heap to reduce, and Reversi Endgame Lab asks which legal move gives the best final score against perfect play. Fixed challenge links let two players compare their reasoning on the same opening. [Play the Maths Arcade](https://alberttansinhon.com/math-arcade/) · [Explore the games, white papers and source code](research/arcade/README.md)
 
+Teach mathematical thinking with 20 replayable positions. The six spoiler-free player sheets contain two positions per game. The teaching guide adds worked answers, assessment prompts and research investigations. [Public teaching hub](https://alberttansinhon.com/math-arcade/teaching/) · [Read or download both resources](docs/teaching/README.md) · [Research papers on GitHub Pages](https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/)
+
 | Investigate a question | Read the mathematics |
 | --- | --- |
 | How do we know a solution is shortest? | [Lattice Dash, Target Forge and Parity Lights](docs/MATHS_ARCADE.md) |
