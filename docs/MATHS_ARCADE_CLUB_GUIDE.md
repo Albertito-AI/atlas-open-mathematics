@@ -40,6 +40,8 @@ Rows are A, B and C from top to bottom. Columns run from 1 to 3 left to right. T
 
 **If time is short.** Supply the candidate moves or expression from the key and retain the proof question. For a further meeting, use the daily challenge and ask what evidence from today's sheet still applies. [Daily challenge](https://alberttansinhon.com/math-arcade/#daily) · [Technical paper and worked verification](MATHS_ARCADE.md)
 
+**For a governance session.** The [Boardroom case and pilot scorecard](BOARDROOM_PILOT.md) give pairs a new task on emissions boundaries, followed by a bus-timetable challenge to test the same reasoning in another setting.
+
 ## Citation and reuse
 
 Suggested citation: Atlas Open Mathematics. *Can you convince your partner? A 20-minute Maths Arcade circle*. Facilitation and assessment white paper, version 1, 27 November 2026. Credit Albert Tan Sin Hon and named contributors, link to the source version and identify adaptations. The original educational prose is licensed under Creative Commons Attribution 4.0 International. Codex (OpenAI, GPT-6) assisted with drafting, layout and checks. [Content licence](../LICENSE-CONTENT.md) · [Share a teaching variation](https://github.com/Albertito-AI/atlas-open-mathematics/issues/new?template=teaching.yml)

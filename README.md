@@ -12,6 +12,8 @@ Can you prove that your shortest route really is the shortest? Play a round of L
 
 [Play the Maths Arcade](https://alberttansinhon.com/math-arcade/) · [Read the technical white paper](docs/MATHS_ARCADE.md) · [Print the maths-circle guide](docs/MATHS_ARCADE_CLUB_GUIDE.md) · [Propose a puzzle variant](https://github.com/Albertito-AI/atlas-open-mathematics/issues/new?template=problem.yml)
 
+**Boardroom challenge.** A manager can earn a bonus while total emissions rise. Take the manager’s and board’s seats, then write a rule that survives both proposals. [Play the case](https://alberttansinhon.com/math-arcade/boardroom/) · [Join the four-week club pilot](https://alberttansinhon.com/math-arcade/club-pilot/) · [Inspect the worked case and pilot measures](docs/BOARDROOM_PILOT.md)
+
 ## Mathematics at work, then harder questions
 
 The [application guide](docs/APPLICATIONS.md) connects the project's existing
