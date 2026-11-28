@@ -21,6 +21,10 @@ Teach mathematical thinking with 20 replayable positions. The six spoiler-free p
 
 For a group session, play the emissions case or print the two-page maths-circle guide. [Play Boardroom Bonus](https://alberttansinhon.com/math-arcade/boardroom/) · [Print the maths-circle guide](docs/MATHS_ARCADE_CLUB_GUIDE.md) · [Join the club pilot](https://alberttansinhon.com/math-arcade/club-pilot/) · [Propose a puzzle variant](https://github.com/Albertito-AI/atlas-open-mathematics/issues/new?template=problem.yml)
 
+## Olympiad proof practice
+
+Choose a problem in algebra, combinatorics, geometry or invariants. Work from its statement and staged hints, then compare your argument with the full proof and attempt a related problem. The collection pairs each proof with its assumptions, assessment criteria and reproducible checks. [Read the Olympiad proof edition](research/olympiad/README.md)
+
 ## Mathematics at work, then harder questions
 
 The [application guide](docs/APPLICATIONS.md) connects the project's existing

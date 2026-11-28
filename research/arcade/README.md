@@ -6,6 +6,8 @@ Start with a position you can play, make a prediction and follow the calculation
 
 To use these positions with a class, open the [teaching guide and six player sheets](../../docs/teaching/README.md). Each resource is available as searchable text and a print PDF. [Teaching hub](https://alberttansinhon.com/math-arcade/teaching/) · [Research papers on GitHub Pages](https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/)
 
+For longer written arguments, the [Olympiad proof edition](../olympiad/README.md) pairs staged hints with complete solutions, transfer problems and reproducible checks.
+
 | Game and worked position | Question | Paper |
 | --- | --- | --- |
 | [Lattice Dash, Warm-up 2](https://alberttansinhon.com/math-arcade/#play/lattice/0/2) | Can two jumps reach the goal? | [Shortest paths and a lower bound](../../docs/MATHS_ARCADE.md#lattice-dash-and-the-three-jump-lower-bound) |
