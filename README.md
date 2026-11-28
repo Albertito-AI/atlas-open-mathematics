@@ -25,6 +25,8 @@ For a group session, play the emissions case or print the two-page maths-circle 
 
 Choose a problem in algebra, combinatorics, geometry or invariants. Work from its statement and staged hints, then compare your argument with the full proof and attempt a related problem. The collection pairs each proof with its assumptions, assessment criteria and reproducible checks. [Read the Olympiad proof edition](research/olympiad/README.md)
 
+In [The Odd Parcel](research/olympiad/labs/odd-parcel.md), find a heavier parcel with a balance and prove how many inspections even the best strategy needs. [Play the mini-lab](https://alberttansinhon.com/math-arcade/olympiad/odd-parcel/)
+
 ## Mathematics at work, then harder questions
 
 The [application guide](docs/APPLICATIONS.md) connects the project's existing
