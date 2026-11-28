@@ -1,0 +1,51 @@
+{
+  "agent_learning_measured": false,
+  "attempt_ids": [
+    "attempt-d850ce3485724d871fc7f90c91a873af2c8fe77a61621f1b97f50ac03b9526f8",
+    "attempt-1ec6b74fcf91706664859c8d039966f0a933d474e4e8ed26dfb904d3ed438c5f",
+    "attempt-342616415484ed39ed16ae70e4e1da4e201b9adfe4d855b8335ee69db16ea444",
+    "attempt-041e4c835cdac4d47594abcffac156d160bf3e84e092fb20477280f1c206b54c",
+    "attempt-58be5b9e33ef79303aecb7b566d07c16237192f42053d4f8745015f434273c33",
+    "attempt-7e0a59f53ee2aa6d3db86d8537f95a3990e3c272414374294cff4a8527d4acec",
+    "attempt-c24a54b4a5c0baf14668c840cd421640f500277932819b9a64b9b488e2448b84",
+    "attempt-52f8a964dfcf6005762925e0d0e17affdeb801eb3add34dde0fd35a31515812f",
+    "attempt-25879180f7fcd1000b25fd5c8e8e1347fd51ba17ed6e329cf4b2fa62db78d054",
+    "attempt-eb7585d96381add877c5acd0717dd75f947420c0ab271e4de86d15c318039af6",
+    "attempt-8428d43c3cae373dda0b8b7ab349c82169f71a3945d5680aae66fe1be0f566be",
+    "attempt-4429e870bfdfa63a48b65b9512f91fdc8d8a0a86e4336481e60e8fb67d46069b"
+  ],
+  "baseline": {
+    "accepted": 0,
+    "attempted": 6
+  },
+  "case_ids": [
+    "case-6c2c15f53efd0a9c4444aa18f57b21a6f8db16f3e2ad6591ebe399888e8dd354",
+    "case-fbb56ace5aa46fc74283d10c733e0c75102612d46eadc7c04e415b6b33372434",
+    "case-25c9aa47cbb3f792ce002c5e619e471328d7defec99ac649b3ee1076b07dd352",
+    "case-99a83968af984742ea7c71ffb5939e24e99ca2bb8b8ca4acdce1229df18c5d62",
+    "case-f01fc9079668ac487dd70b6d5b387cc92040fe1b4378f5c5c75897f452442d08",
+    "case-165d02402bad59acf7389b8cafd1674998d2e98216cbbf746402dc73565e05c6"
+  ],
+  "formal_proof_assistant_used": false,
+  "language_model_weights_updated": false,
+  "lesson": {
+    "counterexample": "The diagonal shortcut is valid on diagonal systems with nonzero diagonal entries.",
+    "failure": "Dividing each right-hand side by its diagonal coefficient ignores coupled terms.",
+    "procedure": "Solve the coupled system, substitute into every original equation, and check the appropriate certificate.",
+    "scope": "Exact rational two-variable linear systems only."
+  },
+  "live_model": false,
+  "millennium_progress_claimed": false,
+  "mode": "deterministic_known_mathematics",
+  "novel_mathematics_claimed": false,
+  "pilot": "exact_2x2_linear_systems",
+  "revised": {
+    "accepted": 6,
+    "attempted": 6
+  },
+  "schema_version": 1,
+  "seed": 20261128,
+  "synthetic": true,
+  "transfer_scope": "public generated practice, not a protected or contamination-free evaluation",
+  "verification_method": "independent_exact_rational_certificate_check"
+}

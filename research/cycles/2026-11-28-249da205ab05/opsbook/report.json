@@ -1,0 +1,195 @@
+{
+  "assessment_scope": "public practice and exam-labelled software fixtures; no protected learner evaluation",
+  "empty_check_selection_counts_as_success": false,
+  "execution": {
+    "correct_candidate": {
+      "checks": [
+        {
+          "check": "exact-substitution",
+          "exit": 0
+        }
+      ],
+      "pass": true
+    },
+    "incorrect_candidate": {
+      "checks": [
+        {
+          "check": "exact-substitution",
+          "exit": 1
+        }
+      ],
+      "pass": false
+    }
+  },
+  "fresh_process": {
+    "revision": 1,
+    "selected_checks": [
+      "exact-substitution"
+    ]
+  },
+  "integration": "atlas_opsbook_exact_linear_systems",
+  "learned": {
+    "check": "exact-substitution",
+    "guard": {
+      "task": "submit-certificate"
+    },
+    "report": {
+      "eligible": true,
+      "exam": {
+        "cases": 2,
+        "correct_after": 2,
+        "correct_before": 1,
+        "rows": [
+          {
+            "after": [],
+            "before": [],
+            "expected": [],
+            "fixed": [],
+            "id": "exam-read",
+            "introduced": []
+          },
+          {
+            "after": [
+              "exact-substitution"
+            ],
+            "before": [],
+            "expected": [
+              "exact-substitution"
+            ],
+            "fixed": [
+              "exact-substitution"
+            ],
+            "id": "exam-submit",
+            "introduced": []
+          }
+        ]
+      },
+      "practice": {
+        "cases": 2,
+        "correct_after": 2,
+        "correct_before": 1,
+        "rows": [
+          {
+            "after": [],
+            "before": [],
+            "expected": [],
+            "fixed": [],
+            "id": "practice-read",
+            "introduced": []
+          },
+          {
+            "after": [
+              "exact-substitution"
+            ],
+            "before": [],
+            "expected": [
+              "exact-substitution"
+            ],
+            "fixed": [
+              "exact-substitution"
+            ],
+            "id": "practice-submit",
+            "introduced": []
+          }
+        ]
+      }
+    },
+    "revision": 1
+  },
+  "live_model": false,
+  "mathematical_fixture": {
+    "case_id": "case-7b7d05b82131c1729ff52a707168887a88059a018e967bdf66e1737139773ef0",
+    "correct": {
+      "accepted": true,
+      "reason": "exact substitution and nonzero determinant prove a unique solution"
+    },
+    "incorrect": {
+      "accepted": false,
+      "reason": "exact substitution fails at least one original equation"
+    }
+  },
+  "model_weights_updated": false,
+  "novel_mathematics_claimed": false,
+  "overbroad": {
+    "promotion_refused": true,
+    "report": {
+      "eligible": false,
+      "exam": {
+        "cases": 2,
+        "correct_after": 1,
+        "correct_before": 1,
+        "rows": [
+          {
+            "after": [
+              "exact-substitution"
+            ],
+            "before": [],
+            "expected": [],
+            "fixed": [],
+            "id": "exam-read",
+            "introduced": [
+              "exact-substitution"
+            ]
+          },
+          {
+            "after": [
+              "exact-substitution"
+            ],
+            "before": [],
+            "expected": [
+              "exact-substitution"
+            ],
+            "fixed": [
+              "exact-substitution"
+            ],
+            "id": "exam-submit",
+            "introduced": []
+          }
+        ]
+      },
+      "practice": {
+        "cases": 2,
+        "correct_after": 1,
+        "correct_before": 1,
+        "rows": [
+          {
+            "after": [
+              "exact-substitution"
+            ],
+            "before": [],
+            "expected": [],
+            "fixed": [],
+            "id": "practice-read",
+            "introduced": [
+              "exact-substitution"
+            ]
+          },
+          {
+            "after": [
+              "exact-substitution"
+            ],
+            "before": [],
+            "expected": [
+              "exact-substitution"
+            ],
+            "fixed": [
+              "exact-substitution"
+            ],
+            "id": "practice-submit",
+            "introduced": []
+          }
+        ]
+      }
+    }
+  },
+  "rollback": {
+    "copy_instructions": [],
+    "copy_revision": 2,
+    "isolated_copy": true,
+    "restored_revision": 0,
+    "retained_revision": 1
+  },
+  "schema_version": 1,
+  "synthetic": true,
+  "upstream_commit": "94b84261d0d2ae23f783522a3c2e4cb697aecde3"
+}
