@@ -8,7 +8,7 @@ The Millennium Prize Problems give the programme long-term research directions. 
 
 ## Play the Maths Arcade
 
-Can you prove that your shortest route really is the shortest? Play a round of Lattice Dash, build an exact expression in Target Forge, or clear the grid in Parity Lights. Send a friend the same puzzle and compare your reasoning. The technical paper gives three replayable challenges. Maths circles can use the two-page club guide to run a 20-minute session.
+Can you prove that your shortest route really is the shortest? Find a route in Lattice Dash, build an exact expression in Target Forge, clear the grid in Parity Lights, or fill a [Sudoku board](https://alberttansinhon.com/math-arcade/#play/sudoku). Send a friend the same puzzle and compare your reasoning. The technical paper gives three replayable challenges. For a club warm-up, ask a partner to explain why a Sudoku digit belongs in a particular cell. The two-page club guide gives a 20-minute session on the other three games.
 
 [Play the Maths Arcade](https://alberttansinhon.com/math-arcade/) · [Read the technical white paper](docs/MATHS_ARCADE.md) · [Print the maths-circle guide](docs/MATHS_ARCADE_CLUB_GUIDE.md) · [Propose a puzzle variant](https://github.com/Albertito-AI/atlas-open-mathematics/issues/new?template=problem.yml)
 
